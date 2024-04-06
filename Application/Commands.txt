@@ -1,0 +1,48 @@
+/* Generate Object Files */
+arm-none-eabi-gcc -c -mcpu=arm926ej-s -g Application.c -o Application.o
+/*Use Assembler*/
+arm-none-eabi-as -mcpu=arm926ej-s Startup.s -o Startup.o
+/*Disassimble*/
+arm-none-eabi-objdump -D Application.o
+/*Sections*/
+arm-none-eabi-objdump -h Application.o
+/*Linker*/
+arm-none-eabi-ld -T Linker_Script.ld Application.o Startup.o UART.o -o Application.elf
+/*Show Symbols*/
+arm-none-eabi-nm Application.o
+/*Map File*/
+arm-none-eabi-ld -T Linker_Script.ld -Map=Sections.map Application.o Startup.o UART.o -o Application.elf
+/*Generate Hex File*/
+arm-none-eabi-objcopy -O binary Application.elf Application.bin
+/*Read ELF File*/
+arm-none-eabi-readelf -a Application.elf
+/*Run Simulation*/
+qemu-system-arm.exe -M versatilepb -m 128M -nographic -kernel Application.bin
+/*Run Simulation And Debug*/
+qemu-system-arm.exe -M versatilepb -m 128M -nographic -s -S -kernel Application.bin
+/*GDB Commands*/
+arm-none-eabi-gdb Application.elf
+target remote LOCALHOST:1234
+----------------------
+print x 			//show variable
+print x 			//if any change stop
+backtrace-where- 	//where am i
+info breakpoints 	//show breakpoints
+b "name" 			//dd breakpoint
+delete "name" 		//delete breakpoint
+x/5i $pc 			//show 5 instructions
+set $pc=0x10060		//change program counter
+si					//step instruction
+sc					//step line c
+l 					//show file
+----------------------
+usbipd wsl list
+2-4    0483:3748  STM32-STLink      Not attached
+usbipd wsl attach --busid 0483:3748
+apt-get install stlink-tools
+sudo st-info --probe
+sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg -f /usr/share/openocd/scripts/target/stm32f1x.cfg
+sudo netstat -tulpn | grep openocd
+gdb-multiarch ./STM32F103C8.axf
+target extended-remote localhost:3333
+lay next
