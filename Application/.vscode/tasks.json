@@ -4,7 +4,7 @@
         {
             "label": "Make Flash",
             "type": "shell",
-            "command": "make flash && make read",
+            "command": "make && scp ./Build/Blink.bin pc:/Network_File_System/RFS/home/root/Binary.bin",
             "options": {
                 "cwd": "${workspaceFolder}"
             },

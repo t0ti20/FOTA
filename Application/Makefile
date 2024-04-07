@@ -8,7 +8,7 @@
 # *  Description:  Make File For Auto Generation
 ##################################################
 #Select Name Of Application
-Application=STM32F103C8
+Application=Blink
 #Build Directory
 Build=./Build
 #Compiler Name
