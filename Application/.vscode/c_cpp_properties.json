@@ -13,7 +13,8 @@
                 "${workspaceFolder}/MCAL/CRC",
                 "${workspaceFolder}/MCAL/FLASH",
                 "${workspaceFolder}/Application",
-                "${workspaceFolder}/MCAL/EXTI"
+                "${workspaceFolder}/MCAL/EXTI",
+                "${workspaceFolder}/Library/Cortex_M3/Headers"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/arm-none-eabi-gcc",

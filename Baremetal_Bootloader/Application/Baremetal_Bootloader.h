@@ -20,7 +20,22 @@
 /*****************************************
 ---  Application Programming Interface  --
 *****************************************/
+/*****************************************************************************************
+* Function Name   : System_Initialization
+* Description     : Initializes the system components including LED pins and the bootloader.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+*****************************************************************************************/
 void System_Initialization(void);
+/*****************************************************************************************
+* Function Name   : Test
+* Description     : Tests the application by indicating that the bootloader is running.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+*****************************************************************************************/
+void Test(void);
 /********************************************************************
  *  END OF FILE:  Application.h
 ********************************************************************/

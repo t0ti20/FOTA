@@ -4,7 +4,7 @@
         {
             "label": "Make Flash",
             "type": "shell",
-            "command": "make flash",
+            "command": "make erase && make flash",
             "options": {
                 "cwd": "${workspaceFolder}"
             },

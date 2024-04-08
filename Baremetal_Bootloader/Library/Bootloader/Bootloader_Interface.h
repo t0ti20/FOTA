@@ -1,10 +1,12 @@
 /*******************************************************************
  *  FILE DESCRIPTION
 -----------------------
- *  Owner:  Khaled El-Sayed @t0ti20
- *  File:  Bootloader.h
+ *  Author: Khaled El-Sayed @t0ti20
+ *  File: ./Bootloader_Interface.h
+ *  Date: April 8, 2024
  *  Module:  Library/Bootloader
- *  Description:  Bootloader Interface File
+ *  Description: Bootloader Interface File
+ *  (C) 2023 "@t0ti20". All rights reserved.
 *******************************************************************/
 #ifndef _BOOTLOADER_H_
 #define _BOOTLOADER_H_
@@ -25,18 +27,22 @@
 #define Chip_ID_Number                  (123)
 #define Basic_SW_Major_Version          (0)
 #define Basic_SW_Minor_Version          (0)
-#define Maximum_Buffer_Size             (255)
-#define Bootloader_Total_Pages          (32)
 #define Total_Services                  (6)
+#define Maximum_Buffer_Size             (255)
+/*****************************************
+-----------    Define Macros    ----------
+*****************************************/
+#define Bootloader_Total_Pages          (32)
 #define Application_Page                (32)
 #define Memory_Base                     (0x8000000U)
 #define Memory_Size                     (0x20000U)
+#define SOFTWARE_RESET_KEY              ((0x5FA << 16) | (1 << 2))
 #define Application_Base 			((volatile u32 *)((Memory_Base)+(Application_Page*1024)))
 #define Bootloader_Base 			     ((volatile u32 *)(Memory_Base))
 /*****************************************
 -------    Macro Like Function    --------
 *****************************************/
-#define SET_MSP(Task_Address)                     __asm volatile ("MSR MSP,%[Variable]"::[Variable]"r"(Task_Address))
+#define SET_MSP(Task_Address)            __asm volatile ("MSR MSP,%[Variable]"::[Variable]"r"(Task_Address))
 /*****************************************
 --------    Type  Definitions    ---------
 *****************************************/
@@ -50,7 +56,8 @@ typedef enum Bootloader_State_t
      Bootloader_State_Unsuccessful_Erase=(4),
      Bootloader_State_Successful_Write  =(5),
      Bootloader_State_Unsuccessful_Write=(6),
-     Bootloader_State_Wrong_Command     =(7)
+     Bootloader_State_Error_CRC         =(7),
+     Bootloader_State_Wrong_Command     =(8)
 }Bootloader_State_t;
 /*---------------- Command -------------*/
 typedef enum Bootloader_Command_t
@@ -65,12 +72,36 @@ typedef enum Bootloader_Command_t
 /*****************************************
 ---  Application Programming Interface  --
 *****************************************/
+/*****************************************************************************************
+* Function Name   : Bootloader_Initialize
+* Description     : Initializes necessary modules for the bootloader operation.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+*****************************************************************************************/
 void Bootloader_Initialize(void);
+/*****************************************************************************************
+* Function Name   : Bootloader_Start
+* Description     : Starts the bootloader application. It checks for a flag in the flash 
+*                   memory. If the flag is set, it waits to receive a command from the 
+*                   host. Otherwise, it starts the flashed application.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+*****************************************************************************************/
 void Bootloader_Start(void);
+/*****************************************************************************************
+* Function Name   : Bootloader_Jump
+* Description     : Initiates a jump from the current application to the bootloader 
+*                   application. This function erases a flag to ensure the system stays 
+*                   in bootloader mode during the next boot, and then jumps to the 
+*                   bootloader application.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+*****************************************************************************************/
 void Bootloader_Jump(void);
-void Bootloader_Send_Message(const u8 Message[],...);
-
 /********************************************************************
- *  END OF FILE:  Bootloader.h
+ *  END OF FILE:  Bootloader_Interface.h
 ********************************************************************/
 #endif
