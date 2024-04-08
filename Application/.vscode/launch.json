@@ -7,7 +7,7 @@
           {
                "preLaunchCommands": [],
                "cwd": "${workspaceRoot}",
-               "executable": "${workspaceFolder}/Build/STM32F103C8.elf",
+               "executable": "${workspaceFolder}/Build/Blink.elf",
                "name": "Debug with OpenOCD",
                "request": "launch",
                "type": "cortex-debug",

@@ -13,14 +13,15 @@
 ----------   Include Files    ------------
 *****************************************/
 #include "GPIO_Interface.h"
-#include "CRC.h"
-#include "Macros.h"
-#include "FLASH.h"
-#include "Bootloader.h"
+#include "EXTI_Interface.h"
+#include "Bootloader_Interface.h"
 /*****************************************
 ---  Application Programming Interface  --
 *****************************************/
+void Test_1(void);
+void Test_2(void);
 void System_Initialization(void);
+void Jump_To_Bootloader (void);
 /********************************************************************
  *  END OF FILE:  Application.h
 ********************************************************************/

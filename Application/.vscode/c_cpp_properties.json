@@ -12,7 +12,8 @@
                 "${workspaceFolder}/Library/Bootloader",
                 "${workspaceFolder}/MCAL/CRC",
                 "${workspaceFolder}/MCAL/FLASH",
-                "${workspaceFolder}/Application"
+                "${workspaceFolder}/Application",
+                "${workspaceFolder}/MCAL/EXTI"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/arm-none-eabi-gcc",

@@ -25,9 +25,18 @@
 #define Chip_ID_Number                  (123)
 #define Basic_SW_Major_Version          (0)
 #define Basic_SW_Minor_Version          (0)
-#define Maximum_Buffer_Size             (250)
+#define Maximum_Buffer_Size             (255)
 #define Bootloader_Total_Pages          (32)
-#define Total_Services                  (5)
+#define Total_Services                  (6)
+#define Application_Page                (32)
+#define Memory_Base                     (0x8000000U)
+#define Memory_Size                     (0x20000U)
+#define Application_Base 			((volatile u32 *)((Memory_Base)+(Application_Page*1024)))
+#define Bootloader_Base 			     ((volatile u32 *)(Memory_Base))
+/*****************************************
+-------    Macro Like Function    --------
+*****************************************/
+#define SET_MSP(Task_Address)                     __asm volatile ("MSR MSP,%[Variable]"::[Variable]"r"(Task_Address))
 /*****************************************
 --------    Type  Definitions    ---------
 *****************************************/
@@ -50,14 +59,17 @@ typedef enum Bootloader_Command_t
      Bootloader_Command_Send_ID         =(2),
      Bootloader_Command_Send_Version    =(3),
      Bootloader_Command_Erase_Flash     =(4),
-     Bootloader_Command_Write_Flash     =(5)
+     Bootloader_Command_Write_Flash     =(5),
+     Bootloader_Command_Address_Jump    =(6)
 }Bootloader_Command_t;
 /*****************************************
 ---  Application Programming Interface  --
 *****************************************/
 void Bootloader_Initialize(void);
-Bootloader_State_t Bootloader_Receive_Command(void);
+void Bootloader_Start(void);
+void Bootloader_Jump(void);
 void Bootloader_Send_Message(const u8 Message[],...);
+
 /********************************************************************
  *  END OF FILE:  Bootloader.h
 ********************************************************************/
