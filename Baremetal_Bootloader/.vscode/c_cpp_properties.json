@@ -3,16 +3,7 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/MCAL/GPIO",
-                "${workspaceFolder}/Library/MCU",
-                "${workspaceFolder}/Library",
-                "${workspaceFolder}/MCAL/RCC",
-                "${workspaceFolder}/MCAL/USART",
-                "${workspaceFolder}/MCAL/NVIC",
-                "${workspaceFolder}/Library/Bootloader",
-                "${workspaceFolder}/MCAL/CRC",
-                "${workspaceFolder}/MCAL/FLASH",
-                "${workspaceFolder}/Application"
+                "~/Desktop/VS-Code/GitHub/SOCs_Drivers/STM32F103/STM32F103C8/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/arm-none-eabi-gcc",
