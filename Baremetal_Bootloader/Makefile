@@ -31,10 +31,10 @@ FLASH_Address = 0x08000000
 ##################################################
 ################### Variables ####################
 ##################################################
-SRC=$(shell find $(SOURCEDIR) -name '*.c')
-SRS=$(shell find $(SOURCEDIR) -name '*.s')
-SRL=$(shell find $(SOURCEDIR) -name '*.ld')
-INCS+=$(shell find $(SOURCEDIR) -name '*.h' -exec dirname {} \; | uniq | sed 's/^/-I /')
+SRC=$(shell find -L $(SOURCEDIR) -name '*.c')
+SRS=$(shell find -L $(SOURCEDIR) -name '*.s')
+SRL=$(shell find -L $(SOURCEDIR) -name '*.ld')
+INCS+=$(shell find -L $(SOURCEDIR) -name '*.h' -exec dirname {} \; | uniq | sed 's/^/-I /')
 OBJ=$(SRC:.c=.o) $(SRS:.s=.o)	
 ##################################################
 ################# Main Methouds ##################

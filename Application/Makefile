@@ -27,14 +27,14 @@ LIBS=
 # LIBS+=-L /usr/lib/arm-none-eabi/lib
 # LIBS+=-L /usr/lib/arm-none-eabi/newlib
 #Flash Memory
-FLASH_Address = 0x08008000
+FLASH_Address = 0x08000000
 ##################################################
 ################### Variables ####################
 ##################################################
-SRC=$(shell find $(SOURCEDIR) -name '*.c')
-SRS=$(shell find $(SOURCEDIR) -name '*.s')
-SRL=$(shell find $(SOURCEDIR) -name '*.ld')
-INCS+=$(shell find $(SOURCEDIR) -name '*.h' -exec dirname {} \; | uniq | sed 's/^/-I /')
+SRC=$(shell find -L $(SOURCEDIR) -name '*.c')
+SRS=$(shell find -L $(SOURCEDIR) -name '*.s')
+SRL=$(shell find -L $(SOURCEDIR) -name '*.ld')
+INCS+=$(shell find -L $(SOURCEDIR) -name '*.h' -exec dirname {} \; | uniq | sed 's/^/-I /')
 OBJ=$(SRC:.c=.o) $(SRS:.s=.o)	
 ##################################################
 ################# Main Methouds ##################
@@ -80,7 +80,7 @@ clean:
 #Flash On Board
 .PHONY: flash
 flash: all
-	@if [ ! -w /dev/bus/usb ]; then sudo chmod -R 777 /dev/bus/usb; fi
+	@if [ ! -w /dev/bus/usb ];then sudo chmod -R 777 /dev/bus/usb;fi
 	@st-flash write $(Build)/$(Application).bin ${FLASH_Address} > /dev/null 2>&1
 	@echo "========= Flashing Finished ======="
 #*******************************************************************
@@ -89,7 +89,7 @@ flash: all
 .PHONY: erase
 erase:
 	@sudo chmod -R 777 /dev/
-	@st-flash erase --flash={FLASH_Address} > /dev/null 2>&1
+	@st-flash erase > /dev/null 2>&1
 	@echo "========= Erasing Finished ========"
 #*******************************************************************
 #*******************************************************************
