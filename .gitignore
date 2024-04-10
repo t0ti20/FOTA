@@ -1,0 +1,11 @@
+cmake_install.cmake
+.gitignore
+CMakeCache.txt
+**/build/
+**/build*/
+**/Build/
+**/Build*/
+**/.cache*/
+**/.vscode/
+**/CMakeFiles/
+**/Makefile
