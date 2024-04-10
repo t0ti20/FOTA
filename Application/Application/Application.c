@@ -27,7 +27,7 @@ int main(void)
 	System_Initialization();
 	while (1)
 	{
-		Test_Blue();
+		Test_Yellow();
 	}
 }
 /*****************************************
@@ -96,6 +96,8 @@ void System_Initialization(void)
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,0);
 	/* Initialize Bootloader Jump As External Interrupt */
 	EXTI_Initilization(Bootloader);
+	/* Bootloader Version */
+	Bootloader_Set_Application_Version(CHIP_ID,MAJOR,MINOR);
 }
 /*****************************************************************************************
 * Function Name   : Jump_To_Bootloader
