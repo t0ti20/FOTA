@@ -27,7 +27,7 @@ int main(void)
 	System_Initialization();
 	while (1)
 	{
-		Test_2();;
+		Test_2();
 	}
 }
 /*****************************************
