@@ -22,6 +22,7 @@
 #define CHIP_ID                         (123)
 #define MAJOR                           (1)
 #define MINOR                           (2)
+#define DELAY                           (500)
 /*****************************************
 ---  Application Programming Interface  --
 *****************************************/

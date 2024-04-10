@@ -46,11 +46,11 @@ void Test_Yellow(void)
 {
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,1);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,1);
-	delay_ms(1000);
+	delay_ms(DELAY);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,0);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,0);
-	delay_ms(1000);
-	delay_ms(1000);
+	delay_ms(DELAY);
+	delay_ms(DELAY);
 }
 /*****************************************************************************************
 * Function Name   : Test_Blue
@@ -63,11 +63,11 @@ void Test_Blue(void)
 {
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_0,1);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,1);
-	delay_ms(1000);
+	delay_ms(DELAY);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_0,0);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,0);
-	delay_ms(1000);
-	delay_ms(1000);
+	delay_ms(DELAY);
+	delay_ms(DELAY);
 }
 /*****************************************************************************************
 * Function Name   : System_Initialization
