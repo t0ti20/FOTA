@@ -20,22 +20,22 @@
 ---  Application Programming Interface  --
 *****************************************/
 /*****************************************************************************************
-* Function Name   : Test_1
+* Function Name   : Test_Yellow
 * Description     : Performs a test by toggling specific GPIO pins and delaying for a 
 *                   specified time.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
 *****************************************************************************************/
-void Test_1(void);
+void Test_Yellow(void);
 /*****************************************************************************************
-* Function Name   : Test_2
+* Function Name   : Test_Blue
 * Description     : Performs a test by toggling GPIO pins and delaying for a specified time.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
 *****************************************************************************************/
-void Test_2(void);
+void Test_Blue(void);
 /*****************************************************************************************
 * Function Name   : System_Initialization
 * Description     : Initializes the system by configuring external interrupts, LED pins,

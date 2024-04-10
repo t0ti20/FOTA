@@ -17,7 +17,7 @@
 /*****************************************************************************************
 * Function Name   : main
 * Description     : Entry point of the program. Initializes the system and continuously 
-*                   executes Test_2 function in an infinite loop.
+*                   executes Test_Blue function in an infinite loop.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : Integer (Exit status of the program)
@@ -27,21 +27,21 @@ int main(void)
 	System_Initialization();
 	while (1)
 	{
-		Test_2();
+		Test_Yellow();
 	}
 }
 /*****************************************
 --------------    APIs     ---------------
 *****************************************/
 /*****************************************************************************************
-* Function Name   : Test_1
+* Function Name   : Test_Yellow
 * Description     : Performs a test by toggling specific GPIO pins and delaying for a 
 *                   specified time.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
 *****************************************************************************************/
-void Test_1(void)
+void Test_Yellow(void)
 {
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,1);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,1);
@@ -52,13 +52,13 @@ void Test_1(void)
 	delay_ms(1000);
 }
 /*****************************************************************************************
-* Function Name   : Test_2
+* Function Name   : Test_Blue
 * Description     : Performs a test by toggling GPIO pins and delaying for a specified time.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
 *****************************************************************************************/
-void Test_2(void)
+void Test_Blue(void)
 {
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_0,1);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,1);
