@@ -28,6 +28,7 @@ int main(void)
 	while (1)
 	{
 		Test_Blue();
+		Test_Yellow();
 	}
 }
 /*****************************************
