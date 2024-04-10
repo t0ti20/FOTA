@@ -1,3 +1,0 @@
-# FOTA
-Testing Fota
--
