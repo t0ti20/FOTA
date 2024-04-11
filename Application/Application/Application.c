@@ -27,8 +27,8 @@ int main(void)
 	System_Initialization();
 	while (1)
 	{
-		//Test_Blue();
-		Test_Yellow();;;
+		Test_Blue();
+		// Test_Yellow();;;
 	}
 }
 /*****************************************
