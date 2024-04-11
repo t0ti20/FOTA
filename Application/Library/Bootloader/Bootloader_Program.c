@@ -501,6 +501,8 @@ static Bootloader_State_t Bootloader_Receive_Command(void)
 *****************************************************************************************/
 void Bootloader_Jump(void)
 {
+	/* Erase Flag To Stay In Bootloader Application */
+	Flash_Erase_Pages(31,1);
 	/* Perform Software Reset */
 	SCB.AIRCR.Register=SOFTWARE_RESET_KEY;
 	/* Dummy read to ensure completion before the next instruction */
