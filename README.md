@@ -35,11 +35,14 @@ This project focuses on implementing Over-the-Air (OTA) updates utilizing an Arm
 
 ## Videos
 
-- GUI Commands Testing Between Raspberry Pi and Arm Controller
+- CLI Commands Testing Between Raspberry Pi and Arm Controller
   
 https://github.com/t0ti20/FOTA/assets/61616031/7854995b-27e7-4165-9922-8187919d4c36
 
 - Automatic Update Sensing and Downloading Final Image
+
+https://github.com/t0ti20/FOTA/assets/61616031/26c402e1-4767-473d-9e57-bfa89e598f33
+
 
 ## How to Contribute
 
