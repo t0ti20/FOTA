@@ -61,13 +61,14 @@ _Min_Stack_Size = 0; /* required amount of stack */
 /* Specify the memory areas */
 MEMORY
 {
-FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 64K
+FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 32K
 RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 20K
 }
 
 /* Define output sections */
 SECTIONS
 {
+
   /* The startup code goes first into FLASH */
   .isr_vector :
   {
@@ -182,6 +183,13 @@ SECTIONS
     libm.a ( * )
     libgcc.a ( * )
   }
+
+  .VERSION 0x8007FFc :
+  {
+    . = ALIGN(4);
+    KEEP(*(.VERSION)) /* Keep all symbols in VERSION section */
+    . = ALIGN(4);
+  } >FLASH
 
   .ARM.attributes 0 : { *(.ARM.attributes) }
 }

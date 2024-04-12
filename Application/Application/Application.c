@@ -94,7 +94,6 @@ void System_Initialization(void)
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,0);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,0);
 	/* Bootloader Version */
-	Bootloader_Set_Application_Version(CHIP_ID,MAJOR,MINOR);
 }
 /********************************************************************
  *  END OF FILE:  Application.c

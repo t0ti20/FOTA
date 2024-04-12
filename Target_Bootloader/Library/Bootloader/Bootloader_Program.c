@@ -35,11 +35,9 @@ static void Start_Bootloader_Interrupt(u16 *Data)
 	Bootloader_UART.USART_Interrupt=USART_Disable_Interrupt;
 }
 /* Major Version */
-static u8 SW_Major_Version=Default_SW_Major_Version;
-/* Minor Version */
-static u8 SW_Minor_Version=Default_SW_Minor_Version;
-/* Chip Configured ID */
-static u8 Chip_ID=Default_Chip_ID_Number;
+const u32 Version_Controller __attribute__((section(".VERSION"))) = SET_VERSION(Default_Chip_ID_Number,Default_SW_Major_Version,Default_SW_Minor_Version);
+				
+
 /* UART Buffer */
 static u8 UART_Buffer[Maximum_Buffer_Size];
 /*****************************************
@@ -178,8 +176,9 @@ static void Bootloader_Send_Message(const u8 *Message,...)
 *****************************************************************************************/
 static void Bootloader_Send_Version(void)
 {
+	u8 const *Version=(const u8 *)Version_Location;
 	/* Prepare Sending Frame */
-	u8 Message[3]={Chip_ID,SW_Major_Version,SW_Minor_Version};
+	u8 Message[3]={Version[1],Version[2],Version[3]};
 	/* Send ACK And Frame Size */
 	Bootloader_Send_Frame(THREE);
 	/* Send Frame */
@@ -577,12 +576,12 @@ void Bootloader_Initialize(void)
 
 void Bootloader_Set_Application_Version(u8 ID,u8 Major,u8 Minor)
 {
-	/* Major Version */
-	SW_Major_Version=Major;
-	/* Minor Version */
-	SW_Minor_Version=Minor;
-	/* Chip Configured ID */
-	Chip_ID=ID;
+	// /* Major Version */
+	// SW_Major_Version=Major;
+	// /* Minor Version */
+	// SW_Minor_Version=Minor;
+	// /* Chip Configured ID */
+	// Chip_ID=ID;
 }
 /********************************************************************
  *  END OF FILE:  Bootloader.c
