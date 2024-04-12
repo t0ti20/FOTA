@@ -104,8 +104,9 @@ typedef struct __attribute__((packed)) USART_Config_t
 ********************************************************************/
 void USART_Send_Array(USART_Config_t *USART_Config,u8 Array[],u8 Size);
 void USART_Send_String(USART_Config_t *USART_Config,const u8 String[]);
-void USART_Initialization(USART_Config_t *USART_Config);
 void USART_Transmit(USART_Config_t *USART_Config,u16 Data);
+void USART_Initialization(USART_Config_t *USART_Config);
+void USART_Reset(USART_Config_t *USART_Config);
 u16 USART_Receive(USART_Config_t *USART_Config);
 /********************************************************************
  *  END OF FILE:  USART_Interface.h

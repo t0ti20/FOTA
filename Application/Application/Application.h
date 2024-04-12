@@ -14,7 +14,6 @@
 ----------   Include Files    ------------
 *****************************************/
 #include "GPIO_Interface.h"
-#include "EXTI_Interface.h"
 #include "Bootloader_Interface.h"
 /*****************************************
 ---------    Configure Macros    ---------

@@ -22,7 +22,7 @@
 * Parameters (out): None
 * Return value    : Integer (Exit status of the program)
 *****************************************************************************************/
-int main(void) 
+int main(void)
 {	
 	System_Initialization();
 	while (1)
@@ -79,8 +79,6 @@ void Test_Blue(void)
 *****************************************************************************************/
 void System_Initialization(void)
 {
-	/* Initialize External Interrupt */
-	EXTI_Config_t Bootloader={.Port=GPIO_A,.Pin=Pin_8,.Sensing_Edge=Faling_Edge,.Interrupt=Enable,.Event=Disable,.Ptr_Function=Jump_To_Bootloader};
     /* Initialize Led Pins */
 	GPIO_Pin_Config_t Pin={Pin_14,Output_Push_Pull,Output_10};
 	MCAL_GPIO_Initialize(GPIO_B,Pin);
@@ -95,21 +93,8 @@ void System_Initialization(void)
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,0);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,0);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,0);
-	/* Initialize Bootloader Jump As External Interrupt */
-	EXTI_Initilization(Bootloader);
 	/* Bootloader Version */
 	Bootloader_Set_Application_Version(CHIP_ID,MAJOR,MINOR);
-}
-/*****************************************************************************************
-* Function Name   : Jump_To_Bootloader
-* Description     : Jumps to the bootloader.
-* Parameters (in) : None
-* Parameters (out): None
-* Return value    : None
-*****************************************************************************************/
-void Jump_To_Bootloader(void)
-{
-	Bootloader_Jump();
 }
 /********************************************************************
  *  END OF FILE:  Application.c

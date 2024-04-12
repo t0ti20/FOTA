@@ -22,14 +22,17 @@
 * Parameters (out): None
 * Return value    : Integer representing the exit status of the program.
 *****************************************************************************************/
+
 int main(void) 
 {
 	System_Initialization();
+	Test();
+	delay_ms(3000);
 	while (1)
 	{
-		Test();
 		Bootloader_Start();
 	}
+	
 }
 /*****************************************
 --------------    APIs     ---------------

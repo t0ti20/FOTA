@@ -14,9 +14,21 @@
 #include "Bootloader_Interface.h"
 /*****************************************
 ----------    GLOBAL DATA     ------------
-*****************************************
+*****************************************/
+u8 Open_Bootloader=FALSE;
+static void Start_Bootloader_Interrupt(u16 *Data)
+{
+	if(*Data==0xff)
+	{
+		Open_Bootloader=TRUE;
+		Bootloader_Initialize();
+	}
+}
+
 /* UART Setting */
 static USART_Config_t UART_ONE={NULL,USART_1,USART_No_Parity,USART_Rx_Tx,Disable,USART_Eight_Bits,USART_One_Stop,USART_115200,USART_Disable_Interrupt};
+/* UART Setting */
+static USART_Config_t UART_Interrupt={Start_Bootloader_Interrupt,USART_1,USART_No_Parity,USART_Rx_Tx,Disable,USART_Eight_Bits,USART_One_Stop,USART_115200,USART_Rx_Complete_Interrupt};
 /* Major Version */
 static u8 SW_Major_Version=Default_SW_Major_Version;
 /* Minor Version */
@@ -522,20 +534,18 @@ void Bootloader_Jump(void)
 *****************************************************************************************/
 void Bootloader_Start(void)
 {
-	/* Check For Flag */
-	if((Application_Base-1)[0]==0xffffffff)
+	if(Open_Bootloader)
 	{
-		/* Wait Till Receiving Command From Host */
 		Bootloader_Receive_Command();
 	}
 	else if((Application_Base)[0]!=0xffffffff)
 	{
-		/* Start Flashed Application */
 		Bootloader_Start_Application(Application_Base);
 	}
 	else
 	{
-		Bootloader_Receive_Command();
+		Open_Bootloader=True;
+		Bootloader_Initialize();
 	}
 }
 
@@ -549,7 +559,16 @@ void Bootloader_Start(void)
 void Bootloader_Initialize(void)
 {
 	/* Initialize UART For Bootloader */
-	USART_Initialization(&UART_ONE);
+	if(Open_Bootloader==False)
+	{
+		USART_Reset(&UART_Interrupt);
+		USART_Initialization(&UART_Interrupt);
+	}
+	else
+	{
+		USART_Reset(&UART_ONE);
+		USART_Initialization(&UART_ONE);
+	}
 	/* Initialize CRC Modlue */
 	CRC_Initialization();
 }

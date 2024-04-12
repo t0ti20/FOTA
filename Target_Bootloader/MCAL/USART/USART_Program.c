@@ -30,6 +30,28 @@ void USART_Send_Array(USART_Config_t *USART_Config,u8 Array[],u8 Size)
           USART_Transmit(USART_Config,Array[--Size]);
      }
 }
+void USART_Reset(USART_Config_t *USART_Config)
+{
+     USART_t *USART_Number=NULL;
+     /* Select Which USART To Configure */
+     switch (USART_Config->USART_Number)
+     {
+          case USART_1:USART_Number=&USART1;break;
+          case USART_2:USART_Number=&USART2;break;
+          case USART_3:USART_Number=&USART3;break;
+     }
+    /* Disable USART1 */
+    USART_Number->CR1.Bits.Bit_13=Disable;
+    /* Reset USART1 registers to default values */
+    USART_Number->CR1.Register=ZERO;
+    USART_Number->CR2.Register=ZERO;
+    USART_Number->CR3.Register=ZERO;
+    USART_Number->BRR.Register=ZERO;
+    /* Clear USART1 status registers */
+    USART_Number->SR.Register = ZERO;
+    /* Set UE bit */
+    USART_Number->CR1.Bits.Bit_13=ENABLE;
+}
 void USART_Send_String(USART_Config_t *USART_Config,const u8 String[])
 {
      do
@@ -191,7 +213,7 @@ USART_IRQHandler(1)
 {
      u16 Data=ZERO;
      /*Read data register not empty*/
-     if(USART1.CR1.Bits.Bit_5)
+     if(USART1.CR1.Bits.Bit_5&&USART1.SR.Bits.Bit_5)
      {
           /*9 Bit Data No Parity*/
           if((USART1.CR1.Bits.Bit_12==USART_Nine_Bits)&&(Get_Bits(USART1.CR1.Register,NINE,TWO)==USART_No_Parity))Data=USART1.DR.Register&0x1ff;
@@ -253,6 +275,8 @@ USART_IRQHandler(3)
           USART_IRQ_Call_Back_Function[0](&Data);
      }
 }
+
+
 /********************************************************************
  *  END OF FILE:  USART_Program.c
 ********************************************************************/
