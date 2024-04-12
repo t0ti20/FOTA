@@ -27,7 +27,7 @@ int main(void)
 	System_Initialization();
 	while (1)
 	{
-		Test_Blue();
+		//Test_Blue();
 		Test_Yellow();
 	}
 }
@@ -93,7 +93,6 @@ void System_Initialization(void)
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,0);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,0);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,0);
-	/* Bootloader Version */
 }
 /********************************************************************
  *  END OF FILE:  Application.c
