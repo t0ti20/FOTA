@@ -1,5 +1,7 @@
 # OTA Update Implementation with Arm-Based Controller, Raspberry Pi 4.
 
+https://github.com/t0ti20/FOTA/assets/61616031/31f67687-9324-4508-b5bc-6cffe37c6a84
+
 ## Overview
 
 This project focuses on implementing Over-the-Air (OTA) updates utilizing an Arm-Based Controller, a Raspberry Pi 4, and GitHub as the cloud storage platform. It aims to enable seamless remote software updates for connected devices, enhancing device management and maintenance efficiency.
@@ -29,6 +31,9 @@ This project focuses on implementing Over-the-Air (OTA) updates utilizing an Arm
 - Enables seamless OTA updates using Arm-Based Controller, Raspberry Pi 4, and GitHub.
 - Facilitates efficient remote software updates for connected devices.
 - Welcomes community contributions, insights, and ideas for further enhancements.
+
+https://github.com/t0ti20/FOTA/assets/61616031/7854995b-27e7-4165-9922-8187919d4c36
+
 
 ## Videos
 
