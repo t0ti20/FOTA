@@ -50,7 +50,7 @@ void USART_Reset(USART_Config_t *USART_Config)
     /* Clear USART1 status registers */
     USART_Number->SR.Register = ZERO;
     /* Set UE bit */
-    USART_Number->CR1.Bits.Bit_13=ENABLE;
+    //USART_Number->CR1.Bits.Bit_13=ENABLE;
 }
 void USART_Send_String(USART_Config_t *USART_Config,const u8 String[])
 {

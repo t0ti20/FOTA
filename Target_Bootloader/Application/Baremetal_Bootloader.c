@@ -27,12 +27,8 @@ int main(void)
 {
 	System_Initialization();
 	Test();
-	delay_ms(3000);
-	while (1)
-	{
-		Bootloader_Start();
-	}
-	
+	delay_ms(4000);
+	Bootloader_Start();
 }
 /*****************************************
 --------------    APIs     ---------------

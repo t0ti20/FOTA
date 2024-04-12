@@ -69,7 +69,8 @@ typedef enum Bootloader_Command_t
      Bootloader_Command_Flash_Application    =(5),
      Bootloader_Command_Address_Jump         =(6),
      Bootloader_Command_Say_Hi               =(7),
-     Bootloader_Command_Write_Data           =(8)
+     Bootloader_Command_Say_Bye              =(8),
+     Bootloader_Command_Send_Data            =(9)
 }Bootloader_Command_t;
 /*****************************************
 ---  Application Programming Interface  --
@@ -102,7 +103,7 @@ void Bootloader_Start(void);
 * Parameters (out): None
 * Return value    : None
 *****************************************************************************************/
-void Bootloader_Jump(void);
+//void Bootloader_Jump(void);
 
 void Bootloader_Set_Application_Version(u8 ID,u8 Major,u8 Minor);
 
