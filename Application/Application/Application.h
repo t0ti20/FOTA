@@ -14,7 +14,6 @@
 ----------   Include Files    ------------
 *****************************************/
 #include "GPIO_Interface.h"
-#include "Bootloader_Interface.h"
 /*****************************************
 ---------    Configure Macros    ---------
 *****************************************/
@@ -51,14 +50,6 @@ void Test_Blue(void);
 * Return value    : None
 *****************************************************************************************/
 void System_Initialization(void);
-/*****************************************************************************************
-* Function Name   : Jump_To_Bootloader
-* Description     : Jumps to the bootloader.
-* Parameters (in) : None
-* Parameters (out): None
-* Return value    : None
-*****************************************************************************************/
-void Jump_To_Bootloader (void);
 /********************************************************************
  *  END OF FILE:  Application.h
 ********************************************************************/

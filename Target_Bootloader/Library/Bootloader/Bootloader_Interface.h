@@ -24,21 +24,32 @@
 ---------    Configure Macros    ---------
 *****************************************/
 //#define ENABLE_DEBUG
+/* Version Flag Location In Flash */
 #define Version_Location                ((const u32 *)(0x8007FFc))
+/* Default Version */
 #define Default_Chip_ID_Number          (250)
 #define Default_SW_Major_Version        (250)
 #define Default_SW_Minor_Version        (250)
+/* Services Providded By Bootloader */
 #define Total_Services                  (6)
+/* Receive Buffer Size */
 #define Maximum_Buffer_Size             (255)
 /*****************************************
 -----------    Define Macros    ----------
 *****************************************/
+/* Bootloader Pages */
 #define Bootloader_Total_Pages          (32)
+/* Application Pages */
 #define Application_Page                (32)
+/* Memory Base */
 #define Memory_Base                     (0x8000000U)
+/* Memory Size */
 #define Memory_Size                     (0x20000U)
+/* Reset Key */
 #define SOFTWARE_RESET_KEY              ((0x5FA << 16) | (1 << 2))
+/* Application Address */
 #define Application_Base 			((volatile u32 *)((Memory_Base)+(Application_Page*1024)))
+/* Bootloader Address */
 #define Bootloader_Base 			     ((volatile u32 *)(Memory_Base))
 /*****************************************
 -------    Macro Like Function    --------
@@ -77,38 +88,25 @@ typedef enum Bootloader_Command_t
 /*****************************************
 ---  Application Programming Interface  --
 *****************************************/
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Initialize
-* Description     : Initializes necessary modules for the bootloader operation.
+* Description     : Function to initialize the bootloader.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function initializes the UART and CRC modules used by the bootloader.
+*****************************************************************************************************/
 void Bootloader_Initialize(void);
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Start
-* Description     : Starts the bootloader application. It checks for a flag in the flash 
-*                   memory. If the flag is set, it waits to receive a command from the 
-*                   host. Otherwise, it starts the flashed application.
+* Description     : Function to start the bootloader operation.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function is the entry point for the bootloader operation.
+*                   - It continuously checks if the bootloader should be opened, the application should be started, or the bootloader should be interrupted.
+*****************************************************************************************************/
 void Bootloader_Start(void);
-/*****************************************************************************************
-* Function Name   : Bootloader_Jump
-* Description     : Initiates a jump from the current application to the bootloader 
-*                   application. This function erases a flag to ensure the system stays 
-*                   in bootloader mode during the next boot, and then jumps to the 
-*                   bootloader application.
-* Parameters (in) : None
-* Parameters (out): None
-* Return value    : None
-*****************************************************************************************/
-//void Bootloader_Jump(void);
-
-void Bootloader_Set_Application_Version(u8 ID,u8 Major,u8 Minor);
-
 /********************************************************************
  *  END OF FILE:  Bootloader_Interface.h
 ********************************************************************/
