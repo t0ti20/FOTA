@@ -1,3 +1,4 @@
-# [submodule "CPP_Application"]
-# 	path = CPP_Application
-# 	url = https://github.com/t0ti20/CPP_Application
+[submodule "Host_Bootloader"]
+	path = CPP_Application
+	url = https://github.com/t0ti20/CPP_Application
+	branch = master
