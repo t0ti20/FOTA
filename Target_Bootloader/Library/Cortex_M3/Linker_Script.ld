@@ -183,7 +183,7 @@ SECTIONS
     libm.a ( * )
     libgcc.a ( * )
   }
-
+/* Adding Version Section To Store Current Version */
   .VERSION 0x8007FFc :
   {
     . = ALIGN(4);

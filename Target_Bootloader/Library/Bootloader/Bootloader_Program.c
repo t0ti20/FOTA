@@ -13,9 +13,50 @@
 *****************************************/
 #include "Bootloader_Interface.h"
 /*****************************************
-----------    GLOBAL DATA     ------------
+-------    Functions Prototypes   --------
 *****************************************/
 static void Start_Bootloader_Interrupt(u16 *Data);
+/*****************************************
+----------    GLOBAL DATA     ------------
+*****************************************/
+/* USART Configure */
+static USART_Config_t Bootloader_UART={Start_Bootloader_Interrupt,USART_1,USART_No_Parity,USART_Rx_Tx,Disable,USART_Eight_Bits,USART_One_Stop,USART_115200,USART_Rx_Complete_Interrupt};
+/* Switch To Bootloader Flag */
+u8 Open_Bootloader=FALSE;
+/* Version Control */
+const u32 Version_Controller __attribute__((section(".VERSION"))) = SET_VERSION(Default_Chip_ID_Number,Default_SW_Major_Version,Default_SW_Minor_Version);
+/* UART Buffer */
+static u8 UART_Buffer[Maximum_Buffer_Size];
+/*****************************************
+-----------  Static Functions  -----------
+*****************************************/
+/****************************************************************************************************
+* Function Name   : Start_Bootloader_Interrupt
+* Description     : Static function to start bootloader interrupt.
+* Parameters (in) : Data - Pointer to u16 data.
+* Parameters (out): None
+* Return value    : None
+* Notes           : - This function configures USART to run without interrupt.
+*****************************************************************************************************/
+static void Start_Bootloader_Interrupt(u16 *Data)
+{
+	/* Configure USART To Run Without Interrupt */
+	Open_Bootloader=TRUE;
+	Bootloader_UART.Call_Back_Function=NULL;
+	Bootloader_UART.USART_Interrupt=USART_Disable_Interrupt;
+}
+
+/****************************************************************************************************
+* Function Name   : Reset_MCU
+* Description     : Static function to perform software reset of MCU.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+* Notes           : - This function performs a software reset of the MCU.
+*                   - It writes the SOFTWARE_RESET_KEY to SCB AIRCR register.
+*                   - It ensures completion before proceeding to the next instruction.
+*                   - It enters an infinite loop if the reset fails.
+*****************************************************************************************************/
 static void Reset_MCU(void)
 {
 	/* Perform Software Reset */
@@ -25,32 +66,18 @@ static void Reset_MCU(void)
 	/* Stuck If Failed To Reset */
 	while(1);
 }
-/* UART Setting */
-static USART_Config_t Bootloader_UART={Start_Bootloader_Interrupt,USART_1,USART_No_Parity,USART_Rx_Tx,Disable,USART_Eight_Bits,USART_One_Stop,USART_115200,USART_Rx_Complete_Interrupt};
-u8 Open_Bootloader=FALSE;
-static void Start_Bootloader_Interrupt(u16 *Data)
-{
-	Open_Bootloader=TRUE;
-	Bootloader_UART.Call_Back_Function=NULL;
-	Bootloader_UART.USART_Interrupt=USART_Disable_Interrupt;
-}
-/* Major Version */
-const u32 Version_Controller __attribute__((section(".VERSION"))) = SET_VERSION(Default_Chip_ID_Number,Default_SW_Major_Version,Default_SW_Minor_Version);
-				
 
-/* UART Buffer */
-static u8 UART_Buffer[Maximum_Buffer_Size];
-/*****************************************
------------  Static Functions  -----------
-*****************************************/
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Start_Application
-* Description     : Starts the user application by setting the stack pointer and jumping 
-*                   to the application reset handler.
-* Parameters (in) : Application_Address - Pointer to the address of the user application.
+* Description     : Static function to start the user application.
+* Parameters (in) : Application_Address - Pointer to the application address.
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function sets the stack pointer and reset handler for the user application.
+*                   - It deinitializes all modules (TODO).
+*                   - It provides debug information if ENABLE_DEBUG is defined.
+*                   - It jumps to the application reset handler to start the user application.
+*****************************************************************************************************/
 static void Bootloader_Start_Application(volatile u32 *Application_Address)
 {
 	/* Pointer To Application Reset Handlar */
@@ -166,14 +193,16 @@ static void Bootloader_Send_Message(const u8 *Message,...)
 	va_end(Arguments);
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Send_Version
-* Description     : Sends the chip ID, software major version, and software minor version 
-*                   over UART.
+* Description     : Static function to send the version information.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function prepares and sends the version information frame.
+*                   - It sends ACK and frame size before sending the frame.
+*                   - It provides debug information if ENABLE_DEBUG is defined.
+*****************************************************************************************************/
 static void Bootloader_Send_Version(void)
 {
 	u8 const *Version=(const u8 *)Version_Location;
@@ -189,18 +218,20 @@ static void Bootloader_Send_Version(void)
 	#endif
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Erase_Flash
-* Description     : Erases flash memory pages based on the received start and end page 
-*                   numbers, considering only the application region.
+* Description     : Static function to erase flash memory.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function checks for pages in the application region to erase.
+*                   - If the erase operation is successful, it sends an ACK.
+*                   - If the erase operation fails, it sends a NACK.
+*****************************************************************************************************/
 static void Bootloader_Erase_Flash(void)
 {
 	/* Check For Pages It Its For Application Region */
-	if((UART_Buffer[2]>=32)&&(UART_Buffer[3]<128))
+	if((UART_Buffer[2]>=31)&&(UART_Buffer[3]<128))
 	{
 		/* Erase Needed Pages */
 		if(Flash_State_Ok==Flash_Erase_Pages(UART_Buffer[2],UART_Buffer[3]))
@@ -235,13 +266,16 @@ static void Bootloader_Send_ID(void)
 	USART_Send_Array(&Bootloader_UART,(u8*)Variable,12);
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Send_Help
-* Description     : Sends a list of available bootloader commands over UART.
+* Description     : Static function to send help information.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function prepares and sends the help information frame.
+*                   - It sends ACK with frame size before sending the frame.
+*                   - It provides debug information if ENABLE_DEBUG is defined.
+*****************************************************************************************************/
 static void Bootloader_Send_Help(void)
 {
 	/* Prepare Frame */
@@ -256,14 +290,16 @@ static void Bootloader_Send_Help(void)
 	#endif
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Receive_Payload
-* Description     : Receives and validates the payload sent over UART.
+* Description     : Static function to receive payload from the bootloader.
 * Parameters (in) : None
 * Parameters (out): None
-* Return value    : Bootloader_State_t - Indicates the status of payload reception and 
-*                   validation.
-*****************************************************************************************/
+* Return value    : Bootloader_State_t - State of the bootloader after receiving payload.
+* Notes           : - This function receives the frame size and the entire frame.
+*                   - It checks the CRC of the payload and updates the return state accordingly.
+*                   - It provides debug information if ENABLE_DEBUG is defined.
+*****************************************************************************************************/
 static Bootloader_State_t Bootloader_Receive_Payload(void)
 {
 	Bootloader_State_t Return=Bootloader_State_OK;
@@ -301,13 +337,19 @@ static Bootloader_State_t Bootloader_Receive_Payload(void)
 	return Return;
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Write_Flash
-* Description     : Writes received payload to flash memory.
+* Description     : Static function to write flash memory with received payload.
 * Parameters (in) : None
 * Parameters (out): None
-* Return value    : Bootloader_State_t - Indicates the status of flash writing process.
-*****************************************************************************************/
+* Return value    : Bootloader_State_t - State of the bootloader after writing flash.
+* Notes           : - This function erases needed pages to be ready for writing.
+*                   - It receives all frames of the payload, writes them to flash memory, and
+*                     sends ACK or NACK based on the CRC of each frame.
+*                   - It updates the state based on the success or failure of writing.
+*                   - If writing is successful, it marks page number 32 to boot to the application
+*                     automatically.
+*****************************************************************************************************/
 static Bootloader_State_t Bootloader_Write_Flash(void)
 {
 	/* Return State */
@@ -375,13 +417,16 @@ static Bootloader_State_t Bootloader_Write_Flash(void)
 	return Status;
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Address_Jump
-* Description     : Jumps to the specified address.
+* Description     : Static function to jump to a specified address.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function receives the jumping address from the UART buffer.
+*                   - It checks if the address is valid for jumping.
+*                   - If valid, it sends ACK and jumps to the received address.
+*****************************************************************************************************/
 static void Bootloader_Address_Jump(void)
 {
 	/* Get Jumping Address */
@@ -404,6 +449,16 @@ static void Bootloader_Address_Jump(void)
 		Bootloader_Send_NACK();
 	}
 }
+
+/****************************************************************************************************
+* Function Name   : Bootloader_Say_Bye
+* Description     : Static function to send a bye message and reset the MCU.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+* Notes           : - This function sends an ACK and frame size.
+*                   - It resets the MCU after sending the message.
+*****************************************************************************************************/
 static void Bootloader_Say_Bye(void)
 {
 	/* Send ACK And Frame Size */
@@ -413,8 +468,16 @@ static void Bootloader_Say_Bye(void)
 		Bootloader_Send_Message("Reset MCU\n");
 	#endif
 	Reset_MCU();
-
 }
+
+/****************************************************************************************************
+* Function Name   : Bootloader_Say_Hi
+* Description     : Static function to send a hi message.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+* Notes           : - This function sends an ACK and frame size.
+*****************************************************************************************************/
 static void Bootloader_Say_Hi(void)
 {
 	/* Send ACK And Frame Size */
@@ -424,6 +487,16 @@ static void Bootloader_Say_Hi(void)
 		Bootloader_Send_Message("Done Sending 3 Elements Of Vesrion\n");
 	#endif
 }
+
+/****************************************************************************************************
+* Function Name   : Bootloader_Send_Data
+* Description     : Static function to send data.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+* Notes           : - This function reads desired address and data from UART buffer and checks if it is in the application region.
+*                   - If yes, it writes the data to flash memory at the desired address and sends an ACK. Otherwise, it sends a NACK.
+*****************************************************************************************************/
 static void Bootloader_Send_Data(void)
 {
 	u32 Desired_Address=(*(u32*)(UART_Buffer+2));
@@ -446,13 +519,16 @@ static void Bootloader_Send_Data(void)
 		Bootloader_Send_NACK();
 	}
 }
-/*****************************************************************************************
+
+/****************************************************************************************************
 * Function Name   : Bootloader_Check_Command
-* Description     : Checks and executes the received bootloader command.
+* Description     : Static function to check and execute bootloader command.
 * Parameters (in) : None
 * Parameters (out): None
-* Return value    : Bootloader_State_t - Indicates the status of command execution.
-*****************************************************************************************/
+* Return value    : Bootloader_State_t - State of the bootloader operation.
+* Notes           : - This function checks the received bootloader command and executes the corresponding action.
+*                   - It returns the state of the bootloader operation.
+*****************************************************************************************************/
 static Bootloader_State_t Bootloader_Check_Command(void)
 {
 	Bootloader_State_t Return=Bootloader_State_OK;
@@ -472,14 +548,15 @@ static Bootloader_State_t Bootloader_Check_Command(void)
 	return Return;
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Receive_Command
-* Description     : Receives and validates the command sent over UART.
+* Description     : Static function to receive and process the bootloader command.
 * Parameters (in) : None
 * Parameters (out): None
-* Return value    : Bootloader_State_t - Indicates the status of command reception and 
-*                   execution.
-*****************************************************************************************/
+* Return value    : Bootloader_State_t - State of the bootloader operation.
+* Notes           : - This function receives the bootloader command, checks its CRC, and processes it.
+*                   - It returns the state of the bootloader operation.
+*****************************************************************************************************/
 static Bootloader_State_t Bootloader_Receive_Command(void)
 {
 	Bootloader_State_t Return=Bootloader_State_OK;
@@ -513,30 +590,19 @@ static Bootloader_State_t Bootloader_Receive_Command(void)
 	}
 	return Return;
 }
+
 /*****************************************
 ------------  APIs Functions  ------------
 *****************************************/
-/*****************************************************************************************
-* Function Name   : Bootloader_Jump
-* Description     : Initiates a jump from the current application to the bootloader 
-*                   application. This function erases a flag to ensure the system stays 
-*                   in bootloader mode during the next boot, and then jumps to the 
-*                   bootloader application.
-* Parameters (in) : None
-* Parameters (out): None
-* Return value    : None
-*****************************************************************************************/
-
-
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Start
-* Description     : Starts the bootloader application. It checks for a flag in the flash 
-*                   memory. If the flag is set, it waits to receive a command from the 
-*                   host. Otherwise, it starts the flashed application.
+* Description     : Function to start the bootloader operation.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function is the entry point for the bootloader operation.
+*                   - It continuously checks if the bootloader should be opened, the application should be started, or the bootloader should be interrupted.
+*****************************************************************************************************/
 void Bootloader_Start(void)
 {
 	while(1)
@@ -559,13 +625,14 @@ void Bootloader_Start(void)
 	}
 }
 
-/*****************************************************************************************
+/****************************************************************************************************
 * Function Name   : Bootloader_Initialize
-* Description     : Initializes necessary modules for the bootloader operation.
+* Description     : Function to initialize the bootloader.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-*****************************************************************************************/
+* Notes           : - This function initializes the UART and CRC modules used by the bootloader.
+*****************************************************************************************************/
 void Bootloader_Initialize(void)
 {
 	USART_Reset(&Bootloader_UART);
@@ -574,15 +641,6 @@ void Bootloader_Initialize(void)
 	CRC_Initialization();
 }
 
-void Bootloader_Set_Application_Version(u8 ID,u8 Major,u8 Minor)
-{
-	// /* Major Version */
-	// SW_Major_Version=Major;
-	// /* Minor Version */
-	// SW_Minor_Version=Minor;
-	// /* Chip Configured ID */
-	// Chip_ID=ID;
-}
 /********************************************************************
- *  END OF FILE:  Bootloader.c
+ *  END OF FILE:  Bootloader_Program.c
 ********************************************************************/
