@@ -1,6 +1,7 @@
 # OTA Update Implementation with Arm-Based Controller, Raspberry Pi 4.
 
-https://github.com/t0ti20/FOTA/assets/61616031/31f67687-9324-4508-b5bc-6cffe37c6a84
+![New Video Name](https://github.com/t0ti20/FOTA/assets/61616031/31f67687-9324-4508-b5bc-6cffe37c6a84)
+
 
 ## Overview
 
