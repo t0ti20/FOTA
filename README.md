@@ -43,6 +43,10 @@ https://github.com/t0ti20/FOTA/assets/61616031/7854995b-27e7-4165-9922-8187919d4
 
 https://github.com/t0ti20/FOTA/assets/61616031/26c402e1-4767-473d-9e57-bfa89e598f33
 
+- Idea After Implementation
+
+https://github.com/t0ti20/FOTA/assets/61616031/b4639e5f-441c-4a55-b21f-0d996178520e
+
 
 ## How to Contribute
 
