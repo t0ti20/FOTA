@@ -32,6 +32,17 @@ This project focuses on implementing Over-the-Air (OTA) updates utilizing an Arm
 - Facilitates efficient remote software updates for connected devices.
 - Welcomes community contributions, insights, and ideas for further enhancements.
 
+## Baremetal Bootloader Sequence Diagram
+
+![Baremetal Bootloader Sequence Diagram](https://github.com/t0ti20/FOTA/assets/61616031/df4a67b1-1b05-4a3d-a45a-551b7a5aa260)
+
+## Monitoring Mode Sequence Diagram
+
+![Monitoring Mode Sequence Diagram](https://github.com/t0ti20/FOTA/assets/61616031/8cf64c10-93fd-45c8-b06c-dbf67f9d5059)
+
+## CLI Mode Sequence Diagram
+
+![CLI Mode Sequence Diagram](https://github.com/t0ti20/FOTA/assets/61616031/58ea119d-830d-42a8-bc0e-6e340c33fd20)
 
 ## Videos
 
