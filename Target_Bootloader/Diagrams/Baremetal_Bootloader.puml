@@ -1,0 +1,30 @@
+@startuml Baremetal_Bootloader
+
+actor User 
+
+participant Bootloader_Application
+participant Raspberrypi
+participant Main_Application
+
+User -> Bootloader_Application: Start Target
+Bootloader_Application -> Bootloader_Application: Initialize System For Bootloader
+Bootloader_Application -> Raspberrypi: Request Halt
+
+alt Halt ACK received
+    Raspberrypi -> Bootloader_Application: Send ACK
+    loop Receive commands
+        Raspberrypi -> Bootloader_Application: Send Command
+        Bootloader_Application -> Bootloader_Application: Check CRC
+        alt Valid command
+            Bootloader_Application -> Raspberrypi: Send ACK
+            Bootloader_Application -> Bootloader_Application: Execute Command
+        else Invalid command
+            Bootloader_Application -> Raspberrypi: Send NACK
+        end
+    end
+else NACK received
+    Raspberrypi -> Bootloader_Application: Send NACK
+    Bootloader_Application -> Main_Application: Jump to Main Application
+end
+
+@enduml
