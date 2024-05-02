@@ -10,11 +10,16 @@
 # Building Message
 message(STATUS "================== Building Application ==================")
 
+#Vesrion Control
+set(Chip_ID 125)
+set(Major 33)
+set(Minor 44)
+
 # Set the minimum required CMake version
 cmake_minimum_required(VERSION 3.0)
 
 # Set Project Name   
-set(Application_Name Test)
+set(Application_Name Test.${Chip_ID}.${Major}.${Minor})
 
 # Set CPP Standard
 set(CMAKE_CXX_STANDARD 17)
