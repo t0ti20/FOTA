@@ -11,6 +11,8 @@
 -----------     INCLUDES     -------------
 *****************************************/
 #include "Application.h"
+#include "GPIO_Interface.h"
+#include "Macros.h"
 /*****************************************
 ----------    GLOBAL DATA     ------------
 *****************************************/
@@ -27,7 +29,7 @@ int main(void)
 	System_Initialization();
 	while (1)
 	{
-		//Test_Blue();
+		Test_Blue();
 		Test_Yellow();
 	}
 }

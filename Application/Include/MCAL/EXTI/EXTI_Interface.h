@@ -13,8 +13,7 @@
 ----------   Include Files    ------------
 *****************************************/
 #include "GPIO_Interface.h"
-#include "RCC_Interface.h"
-#include "NVIC_Interface.h"
+#include "Macros.h"
 /*****************************************
 --------    Type  Definitions    ---------
 *****************************************/
