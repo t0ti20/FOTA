@@ -191,6 +191,12 @@ SECTIONS
     KEEP(*(.VERSION)) /* Keep all symbols in VERSION section */
     . = ALIGN(4);
   } >FLASH
-
+/* Adding Version Section To Store Current Version */
+  .APPLICATION_CRC 0x8007FE0 :
+  {
+    . = ALIGN(4);
+    KEEP(*(.APPLICATION_CRC)) /* Keep all symbols in VERSION section */
+    . = ALIGN(4);
+  } >FLASH
   .ARM.attributes 0 : { *(.ARM.attributes) }
 }

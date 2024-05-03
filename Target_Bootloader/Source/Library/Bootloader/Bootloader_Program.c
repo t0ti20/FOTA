@@ -30,6 +30,7 @@ static USART_Config_t Bootloader_UART={Start_Bootloader_Interrupt,USART_1,USART_
 u8 Open_Bootloader=FALSE;
 /* Version Control */
 const u32 volatile Version_Controller __attribute__((section(".VERSION"))) = SET_VERSION(Default_Chip_ID_Number,Default_SW_Major_Version,Default_SW_Minor_Version);
+const u32 volatile Aplication_Valid __attribute__((section(".APPLICATION_CRC")))=0xffffffff;
 /* UART Buffer */
 static u8 UART_Buffer[Maximum_Buffer_Size];
 /*****************************************
@@ -373,7 +374,7 @@ static Bootloader_State_t Bootloader_Write_Flash(void)
 	/* Current Received Frame */
 	u8 Current_Frame=ZERO;
 	/* Erase NEEDED Paged To Be Ready For Writing */
-	if(Flash_Erase_Pages(Writing_Page,(((250*Total_Payload_Frames)/1024)+1))==Flash_State_Ok)
+	if(Flash_Erase_Pages(Writing_Page-1,(((250*Total_Payload_Frames)/1024)+1))==Flash_State_Ok)
 	{
 		/* Send ACK On Payload Size Frame */
 		Bootloader_Send_ACK();

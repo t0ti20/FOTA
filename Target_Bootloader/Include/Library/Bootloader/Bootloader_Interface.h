@@ -44,7 +44,7 @@
 #define End_Memory 			          ((volatile u32 *)((Memory_Base)+(Memory_Size)))
 /* Bootloader Address */
 #define Bootloader_Base 			     ((volatile u32 *)(Memory_Base))
-#define Valid_CRC                       (*((volatile u32 *)(0x8007FF8)))
+#define Valid_CRC                       (*((volatile u32 *)(0x8007FE0)))
 /*****************************************
 -------    Macro Like Function    --------
 *****************************************/
