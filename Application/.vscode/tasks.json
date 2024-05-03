@@ -4,7 +4,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "cmake .. && make && rm ../Build/* && cp ./*.bin ../Build",
+            "command": "cmake .. && make ; rm ../Build/* ; cp ./*.bin ../Build",
             ///"command": "cmake .. && make && scp ./*.bin pc:/Network_File_System/RFS/home/root/FOTA/Application/Build/",
             "options": {
                 "cwd": "${workspaceFolder}/build"
