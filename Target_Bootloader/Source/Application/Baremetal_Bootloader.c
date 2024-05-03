@@ -2,87 +2,63 @@
  *  FILE DESCRIPTION
 -----------------------
  *  Author: Khaled El-Sayed @t0ti20
- *  File: ./Application.c
+ *  File: ./Baremetal_Bootloader.c
  *  Date: April 8, 2024
- *  Description: Simple Blink Application Illustrating Bootloader
+ *  Description: Application Logic File For Bootloader
  *  (C) 2023 "@t0ti20". All rights reserved.
 *******************************************************************/
 /*****************************************
 -----------     INCLUDES     -------------
 *****************************************/
-#include "Application.h"
-#include "GPIO_Interface.h"
-#include "Macros.h"
+#include "Baremetal_Bootloader.h"
 /*****************************************
 ----------    GLOBAL DATA     ------------
 *****************************************/
 /*****************************************************************************************
 * Function Name   : main
-* Description     : Entry point of the program. Initializes the system and continuously 
-*                   executes Test_Blue function in an infinite loop.
+* Description     : The entry point of the program. Initializes the system, runs the 
+*                   application test, and starts the bootloader.
 * Parameters (in) : None
 * Parameters (out): None
-* Return value    : Integer (Exit status of the program)
+* Return value    : Integer representing the exit status of the program.
 *****************************************************************************************/
-int main(void)
-{	
+int main(void) 
+{
 	System_Initialization();
-	while (1)
-	{
-		Test_Blue();
-		Test_Yellow();
-	}
+	Test();
+	delay_ms(4000);
+	Bootloader_Start();
 }
+
 /*****************************************
 --------------    APIs     ---------------
 *****************************************/
 /*****************************************************************************************
-* Function Name   : Test_Yellow
-* Description     : Performs a test by toggling specific GPIO pins and delaying for a 
-*                   specified time.
+* Function Name   : Test
+* Description     : Tests the application by indicating that the bootloader is running.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
 *****************************************************************************************/
-void Test_Yellow(void)
+void Test(void)
 {
+	/* Test Application Indicate Bootloader Is Running */
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,1);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,1);
-	delay_ms(DELAY);
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,0);
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,0);
-	delay_ms(DELAY);
-	delay_ms(DELAY);
-}
-/*****************************************************************************************
-* Function Name   : Test_Blue
-* Description     : Performs a test by toggling GPIO pins and delaying for a specified time.
-* Parameters (in) : None
-* Parameters (out): None
-* Return value    : None
-*****************************************************************************************/
-void Test_Blue(void)
-{
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_0,1);
 	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,1);
-	delay_ms(DELAY);
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_0,0);
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,0);
-	delay_ms(DELAY);
-	delay_ms(DELAY);
 }
 /*****************************************************************************************
 * Function Name   : System_Initialization
-* Description     : Initializes the system by configuring external interrupts, LED pins,
-*                   and setting LED pins to low.
+* Description     : Initializes the system components including LED pins and the bootloader.
 * Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
 *****************************************************************************************/
 void System_Initialization(void)
 {
-    /* Initialize Led Pins */
-	GPIO_Pin_Config_t Pin={Pin_14,Output_Push_Pull,Output_10};
+	/* Initialize Led Pins */
+    GPIO_Pin_Config_t Pin={Pin_14,Output_Push_Pull,Output_10};
 	MCAL_GPIO_Initialize(GPIO_B,Pin);
 	Pin.Pin_Number=Pin_15;
 	MCAL_GPIO_Initialize(GPIO_B,Pin);
@@ -90,11 +66,8 @@ void System_Initialization(void)
 	MCAL_GPIO_Initialize(GPIO_B,Pin);
 	Pin.Pin_Number=Pin_1;
 	MCAL_GPIO_Initialize(GPIO_B,Pin);
-    /* Set Led Pins To Low */
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_0,0);
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,0);
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,0);
-	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,0);
+	/* Initialize Bootloader */
+	Bootloader_Initialize();
 }
 /********************************************************************
  *  END OF FILE:  Application.c
