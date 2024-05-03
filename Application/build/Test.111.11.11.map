@@ -60,7 +60,7 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
- .text.Test_Blue
+ .text.Test_Yellow
                 0x0000000000000000       0x70 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
  .text          0x0000000000000000       0x14 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
@@ -370,9 +370,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
  .text          0x00000000080081a4       0x44 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
                 0x00000000080081a4                __libc_init_array
  *(.text*)
- .text.Test_Yellow
+ .text.Test_Blue
                 0x00000000080081e8       0x70 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
-                0x00000000080081e8                Test_Yellow
+                0x00000000080081e8                Test_Blue
  .text.System_Initialization
                 0x0000000008008258       0x70 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
                 0x0000000008008258                System_Initialization
