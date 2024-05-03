@@ -1,0 +1,6 @@
+/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/build/CMakeFiles/Baremetal_Bootloader.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/build/CMakeFiles/flash.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/build/CMakeFiles/erase.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/build/CMakeFiles/read.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/build/CMakeFiles/edit_cache.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/build/CMakeFiles/rebuild_cache.dir

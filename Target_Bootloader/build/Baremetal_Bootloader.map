@@ -1,0 +1,902 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                              CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj (__aeabi_uldivmod)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o) (__clzdi2)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o) (__clzsi2)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (atexit)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (exit)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_fini_array)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_init_array)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o) (__register_exitproc)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o) (__call_exitprocs)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o) (_exit)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .debug_line    0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .debug_str     0x0000000000000000      0x12f /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x0000000000000000       0x74 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_line    0x0000000000000000       0x8c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_str     0x0000000000000000       0x94 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text          0x0000000000000000       0x14 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x94 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .rodata.AHBPrescTable
+                0x0000000000000000       0x10 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .rodata.APBPrescTable
+                0x0000000000000000        0x8 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .rodata.EXTI_Initilization.str1.4
+                0x0000000000000000       0x11 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .text.EXTI_Initilization
+                0x0000000000000000      0x14c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Lock_Pin
+                0x0000000000000000       0x68 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Read_Pin
+                0x0000000000000000       0x38 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Toggle_Pin
+                0x0000000000000000       0x3c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Read_Port
+                0x0000000000000000       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Write_Port
+                0x0000000000000000       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Toggle_Port
+                0x0000000000000000       0x38 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .text.USART_Send_String
+                0x0000000000000000       0x24 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_info    0x0000000000000000      0x100 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_abbrev  0x0000000000000000       0xb4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_loc     0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_line    0x0000000000000000       0xc3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_str     0x0000000000000000      0x1e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .text          0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_info    0x0000000000000000      0x81a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000000000      0x1ba /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_loc     0x0000000000000000       0x22 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_line    0x0000000000000000      0x16b /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_str     0x0000000000000000      0x521 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_info    0x0000000000000000      0x102 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_abbrev  0x0000000000000000       0xcc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_loc     0x0000000000000000       0x46 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_line    0x0000000000000000       0xef /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_str     0x0000000000000000      0x1da /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000       0x64 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .rodata        0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_info    0x0000000000000000      0x863 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000000      0x151 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000000       0x18 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_line    0x0000000000000000       0xe4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_str     0x0000000000000000      0x557 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000       0xd0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000       0x8c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_info    0x0000000000000000      0x269 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0000000000000000      0x1bd /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_loc     0x0000000000000000      0x203 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000000000      0x201 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_str     0x0000000000000000      0x290 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000000       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .text          0x0000000000000000       0xfc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000000000000000      0x249 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000000000      0x179 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_loc     0x0000000000000000      0x273 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_ranges  0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000000000000000      0x219 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_str     0x0000000000000000      0x254 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000000       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_info    0x0000000000000000       0xa3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_abbrev  0x0000000000000000       0x6a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_loc     0x0000000000000000       0x15 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_line    0x0000000000000000       0x75 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_str     0x0000000000000000      0x17a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .rodata        0x0000000000000000       0x24 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000008000 xr
+RAM              0x0000000020000000 0x0000000000005000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+LOAD CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000020005000                _estack = 0x20005000
+                0x0000000020005000                Top_Of_Stack = _estack
+                0x0000000020000040                __end_sp = 0x20000040
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000000000                _Min_Stack_Size = 0x0
+
+.isr_vector     0x0000000008000000      0x10c
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x10c CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x0000000008000000                g_pfnVectors
+                0x000000000800010c                . = ALIGN (0x4)
+
+.text           0x000000000800010c     0x156c
+                0x000000000800010c                . = ALIGN (0x4)
+ *(.text)
+ .text          0x000000000800010c       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x00000000080001a4       0x40 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                0x00000000080001a4                __aeabi_uldivmod
+ .text          0x00000000080001e4      0x198 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x00000000080001e4                __udivmoddi4
+ .text          0x000000000800037c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x000000000800037c                __aeabi_ldiv0
+                0x000000000800037c                __aeabi_idiv0
+ .text          0x0000000008000380       0x18 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+                0x0000000008000380                __clzdi2
+ .text          0x0000000008000398       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+                0x0000000008000398                __clzsi2
+ .text          0x00000000080003d4       0x44 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+                0x00000000080003d4                __libc_init_array
+ .text          0x0000000008000418       0xa8 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+                0x0000000008000418                memset
+ *(.text*)
+ .text.Test     0x00000000080004c0       0x2c CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+                0x00000000080004c0                Test
+ .text.System_Initialization
+                0x00000000080004ec       0x50 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+                0x00000000080004ec                System_Initialization
+ .text.main     0x000000000800053c       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+                0x000000000800053c                main
+ .text.Start_Bootloader_Interrupt
+                0x0000000008000570       0x18 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Reset_MCU
+                0x0000000008000588       0x14 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Start_Application
+                0x000000000800059c        0xe CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ *fill*         0x00000000080005aa        0x2 
+ .text.Bootloader_CRC_Check
+                0x00000000080005ac       0x5c CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Send_ACK
+                0x0000000008000608       0x14 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Send_Frame
+                0x000000000800061c       0x20 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Send_Version
+                0x000000000800063c       0x44 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Send_Help
+                0x0000000008000680       0x38 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Send_ID
+                0x00000000080006b8       0x24 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Say_Hi
+                0x00000000080006dc       0x10 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Say_Bye
+                0x00000000080006ec       0x14 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Send_NACK
+                0x0000000008000700       0x14 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Receive_Payload
+                0x0000000008000714       0x50 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Address_Jump
+                0x0000000008000764       0x38 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Check_Command
+                0x000000000800079c       0x8c CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Bootloader_Receive_Command
+                0x0000000008000828       0x54 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .text.Validate
+                0x000000000800087c       0x40 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x000000000800087c                Validate
+ .text.Bootloader_Initialize
+                0x00000000080008bc       0x28 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x00000000080008bc                Bootloader_Initialize
+ .text.Bootloader_Start
+                0x00000000080008e4       0x5c CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x00000000080008e4                Bootloader_Start
+ .text.Reset_Handler
+                0x0000000008000940       0x48 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x0000000008000940                Reset_Handler
+ .text.Default_Handler
+                0x0000000008000988        0x2 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x0000000008000988                RTC_Alarm_IRQHandler
+                0x0000000008000988                DebugMon_Handler
+                0x0000000008000988                TIM1_CC_IRQHandler
+                0x0000000008000988                HardFault_Handler
+                0x0000000008000988                SysTick_Handler
+                0x0000000008000988                PVD_IRQHandler
+                0x0000000008000988                PendSV_Handler
+                0x0000000008000988                NMI_Handler
+                0x0000000008000988                I2C2_EV_IRQHandler
+                0x0000000008000988                UsageFault_Handler
+                0x0000000008000988                ADC1_2_IRQHandler
+                0x0000000008000988                SPI1_IRQHandler
+                0x0000000008000988                TAMPER_IRQHandler
+                0x0000000008000988                DMA1_Channel4_IRQHandler
+                0x0000000008000988                RTC_IRQHandler
+                0x0000000008000988                DMA1_Channel7_IRQHandler
+                0x0000000008000988                CAN1_RX1_IRQHandler
+                0x0000000008000988                TIM4_IRQHandler
+                0x0000000008000988                I2C1_EV_IRQHandler
+                0x0000000008000988                DMA1_Channel6_IRQHandler
+                0x0000000008000988                TIM3_IRQHandler
+                0x0000000008000988                RCC_IRQHandler
+                0x0000000008000988                TIM1_TRG_COM_IRQHandler
+                0x0000000008000988                DMA1_Channel1_IRQHandler
+                0x0000000008000988                Default_Handler
+                0x0000000008000988                SPI2_IRQHandler
+                0x0000000008000988                MemManage_Handler
+                0x0000000008000988                SVC_Handler
+                0x0000000008000988                DMA1_Channel5_IRQHandler
+                0x0000000008000988                USB_LP_CAN1_RX0_IRQHandler
+                0x0000000008000988                USB_HP_CAN1_TX_IRQHandler
+                0x0000000008000988                DMA1_Channel3_IRQHandler
+                0x0000000008000988                TIM1_UP_IRQHandler
+                0x0000000008000988                WWDG_IRQHandler
+                0x0000000008000988                TIM2_IRQHandler
+                0x0000000008000988                TIM1_BRK_IRQHandler
+                0x0000000008000988                I2C2_ER_IRQHandler
+                0x0000000008000988                DMA1_Channel2_IRQHandler
+                0x0000000008000988                CAN1_SCE_IRQHandler
+                0x0000000008000988                FLASH_IRQHandler
+                0x0000000008000988                BusFault_Handler
+                0x0000000008000988                I2C1_ER_IRQHandler
+                0x0000000008000988                USBWakeUp_IRQHandler
+ *fill*         0x000000000800098a        0x2 
+ .text.SystemInit
+                0x000000000800098c       0x4c CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+                0x000000000800098c                SystemInit
+ .text.CRC_Accumulate
+                0x00000000080009d8        0xc CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+                0x00000000080009d8                CRC_Accumulate
+ .text.CRC_Reset
+                0x00000000080009e4       0x10 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+                0x00000000080009e4                CRC_Reset
+ .text.CRC_Initialization
+                0x00000000080009f4       0x18 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+                0x00000000080009f4                CRC_Initialization
+ .text.EXTI0_IRQHandler
+                0x0000000008000a0c       0x1c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008000a0c                EXTI0_IRQHandler
+ .text.EXTI1_IRQHandler
+                0x0000000008000a28       0x1c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008000a28                EXTI1_IRQHandler
+ .text.EXTI2_IRQHandler
+                0x0000000008000a44       0x1c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008000a44                EXTI2_IRQHandler
+ .text.EXTI3_IRQHandler
+                0x0000000008000a60       0x1c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008000a60                EXTI3_IRQHandler
+ .text.EXTI4_IRQHandler
+                0x0000000008000a7c       0x1c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008000a7c                EXTI4_IRQHandler
+ .text.EXTI9_5_IRQHandler
+                0x0000000008000a98       0x90 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008000a98                EXTI9_5_IRQHandler
+ .text.EXTI15_10_IRQHandler
+                0x0000000008000b28       0x90 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008000b28                EXTI15_10_IRQHandler
+ .text.FLASH_Lock
+                0x0000000008000bb8       0x10 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .text.FLASH_Unlock
+                0x0000000008000bc8       0x24 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .text.FLASH_Halfword_Write
+                0x0000000008000bec       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .text.MCAL_GPIO_Initialize
+                0x0000000008000c20       0xd0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                0x0000000008000c20                MCAL_GPIO_Initialize
+ .text.MCAL_GPIO_Write_Pin
+                0x0000000008000cf0       0x48 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                0x0000000008000cf0                MCAL_GPIO_Write_Pin
+ .text.NVIC_Interrupt
+                0x0000000008000d38       0x44 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+                0x0000000008000d38                NVIC_Interrupt
+ .text.RCC_Get_PLL2_Clock
+                0x0000000008000d7c       0xf0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Get_PLL_Clock
+                0x0000000008000e6c       0xdc CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Clock
+                0x0000000008000f48       0x98 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                0x0000000008000f48                RCC_Clock
+ .text.RCC_Get_System_Clock
+                0x0000000008000fe0       0x3c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                0x0000000008000fe0                RCC_Get_System_Clock
+ .text.RCC_Get_AHB_Clock
+                0x000000000800101c       0x40 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                0x000000000800101c                RCC_Get_AHB_Clock
+ .text.RCC_Get_APB1_Clock
+                0x000000000800105c       0x40 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                0x000000000800105c                RCC_Get_APB1_Clock
+ .text.RCC_Get_APB2_Clock
+                0x000000000800109c       0x40 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                0x000000000800109c                RCC_Get_APB2_Clock
+ .text.USART_Reset
+                0x00000000080010dc       0x40 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x00000000080010dc                USART_Reset
+ .text.USART_Initialization
+                0x000000000800111c      0x210 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x000000000800111c                USART_Initialization
+ .text.USART_Transmit
+                0x000000000800132c       0x44 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x000000000800132c                USART_Transmit
+ .text.USART_Send_Array
+                0x0000000008001370       0x20 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x0000000008001370                USART_Send_Array
+ .text.USART_Receive
+                0x0000000008001390       0x78 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x0000000008001390                USART_Receive
+ .text.USART1_IRQHandler
+                0x0000000008001408       0xd0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x0000000008001408                USART1_IRQHandler
+ .text.USART2_IRQHandler
+                0x00000000080014d8       0xc4 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x00000000080014d8                USART2_IRQHandler
+ .text.USART3_IRQHandler
+                0x000000000800159c       0xc4 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x000000000800159c                USART3_IRQHandler
+ *(.glue_7)
+ .glue_7        0x0000000008001660        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008001660        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x0000000008001660        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ *(.init)
+ .init          0x0000000008001660        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008001660                _init
+ .init          0x0000000008001664        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x000000000800166c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000000800166c                _fini
+ .fini          0x0000000008001670        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000008001678                . = ALIGN (0x4)
+                0x0000000008001678                _etext = .
+
+.vfp11_veneer   0x0000000008001678        0x0
+ .vfp11_veneer  0x0000000008001678        0x0 linker stubs
+
+.v4_bx          0x0000000008001678        0x0
+ .v4_bx         0x0000000008001678        0x0 linker stubs
+
+.iplt           0x0000000008001678        0x0
+ .iplt          0x0000000008001678        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.rodata         0x0000000008001678       0x10
+                0x0000000008001678                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x0000000008001678        0x3 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ *fill*         0x000000000800167b        0x1 
+ .rodata        0x000000000800167c        0x3 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ *(.rodata*)
+ *fill*         0x000000000800167f        0x1 
+ .rodata.Bootloader_Send_Help.str1.4
+                0x0000000008001680        0x7 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x0000000008001688                . = ALIGN (0x4)
+ *fill*         0x0000000008001687        0x1 
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008001688        0x8
+                0x0000000008001688                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x0000000008001688        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000000008001690                __exidx_end = .
+
+.rel.dyn        0x0000000008001690        0x0
+ .rel.iplt      0x0000000008001690        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.preinit_array  0x0000000008001690        0x0
+                0x0000000008001690                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x0000000008001690                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000008001690        0x4
+                0x0000000008001690                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x0000000008001690        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008001694                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000008001694        0x4
+                0x0000000008001694                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0000000008001694        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008001698                PROVIDE (__fini_array_end = .)
+                0x0000000008001698                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000      0x2b4 load address 0x0000000008001698
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ *(.data*)
+ .data.Bootloader_UART
+                0x0000000020000000        0xf CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x0000000020000010                . = ALIGN (0x4)
+ *fill*         0x000000002000000f        0x1 
+ *(.FLASH_OPERATIONS)
+ .FLASH_OPERATIONS
+                0x0000000020000010      0x17c CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .FLASH_OPERATIONS
+                0x000000002000018c      0x128 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+                0x00000000200001f0                Flash_Erase_Pages
+                0x0000000020000228                Flash_Write_Page
+                0x0000000020000278                Flash_Write_Data
+                0x00000000200002b4                . = ALIGN (0x4)
+                0x00000000200002b4                _edata = .
+
+.tm_clone_table
+                0x00000000200002b4        0x0 load address 0x000000000800194c
+ .tm_clone_table
+                0x00000000200002b4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .tm_clone_table
+                0x00000000200002b4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+
+.igot.plt       0x00000000200002b4        0x0 load address 0x000000000800194c
+ .igot.plt      0x00000000200002b4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000200002b4                . = ALIGN (0x4)
+
+.bss            0x00000000200002b4      0x168 load address 0x000000000800194c
+                0x00000000200002b4                _sbss = .
+                0x00000000200002b4                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x00000000200002b4       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ *(.bss*)
+ .bss.Open_Bootloader
+                0x00000000200002d0        0x1 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x00000000200002d0                Open_Bootloader
+ *fill*         0x00000000200002d1        0x3 
+ .bss.UART_Buffer
+                0x00000000200002d4       0xff CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ *fill*         0x00000000200003d3        0x1 
+ .bss.EXTI_IRQ_Call_Back_Function
+                0x00000000200003d4       0x3c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .bss.USART_IRQ_Call_Back_Function
+                0x0000000020000410        0xc CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ *(COMMON)
+                0x000000002000041c                . = ALIGN (0x4)
+                0x000000002000041c                _ebss = .
+                0x000000002000041c                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x000000002000041c        0x0 load address 0x000000000800194c
+                0x000000002000041c                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x000000002000041c                . = (. + _Min_Heap_Size)
+                0x000000002000041c                . = (. + _Min_Stack_Size)
+                0x000000002000041c                . = ALIGN (0x4)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.VERSION        0x0000000008007ffc        0x4
+                0x0000000008007ffc                . = ALIGN (0x4)
+ *(.VERSION)
+ .VERSION       0x0000000008007ffc        0x4 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x0000000008007ffc                Version_Controller
+                0x0000000008008000                . = ALIGN (0x4)
+
+.APPLICATION_CRC
+                0x0000000008007fe0        0x4
+                0x0000000008007fe0                . = ALIGN (0x4)
+ *(.APPLICATION_CRC)
+ .APPLICATION_CRC
+                0x0000000008007fe0        0x4 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x0000000008007fe0                Aplication_Valid
+                0x0000000008007fe4                . = ALIGN (0x4)
+
+.ARM.attributes
+                0x0000000000000000       0x2b
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .ARM.attributes
+                0x0000000000000073       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .ARM.attributes
+                0x000000000000009c       0x21 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .ARM.attributes
+                0x00000000000000bd       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .ARM.attributes
+                0x00000000000000e6       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .ARM.attributes
+                0x000000000000010f       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .ARM.attributes
+                0x0000000000000138       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .ARM.attributes
+                0x0000000000000161       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .ARM.attributes
+                0x000000000000018a       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .ARM.attributes
+                0x00000000000001b3       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .ARM.attributes
+                0x00000000000001dc       0x29 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .ARM.attributes
+                0x0000000000000205       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000000000000223       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000000000000024f       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000000000000026d       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .ARM.attributes
+                0x000000000000028b       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x00000000000002a9       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000000002d5       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000301       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x000000000000032d       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+OUTPUT(Baremetal_Bootloader elf32-littlearm)
+LOAD linker stubs
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+
+.comment        0x0000000000000000       0x33
+ .comment       0x0000000000000000       0x33 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                                         0x34 (size before relaxing)
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+
+.debug_info     0x0000000000000000     0x57f9
+ .debug_info    0x0000000000000000      0x39e CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .debug_info    0x000000000000039e     0x1136 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .debug_info    0x00000000000014d4       0x22 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_info    0x00000000000014f6      0x3e8 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_info    0x00000000000018de      0x45f CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .debug_info    0x0000000000001d3d      0x96c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_info    0x00000000000026a9      0x6f1 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .debug_info    0x0000000000002d9a      0x9a4 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_info    0x000000000000373e      0x58a CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_info    0x0000000000003cc8      0x6de CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_info    0x00000000000043a6      0xdc5 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .debug_info    0x000000000000516b       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000000000005191      0x39f /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x0000000000005530       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0000000000005556       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_info    0x000000000000557c       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_info    0x00000000000055a2      0x11a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .debug_info    0x00000000000056bc      0x13d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+
+.debug_abbrev   0x0000000000000000     0x1456
+ .debug_abbrev  0x0000000000000000      0x134 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .debug_abbrev  0x0000000000000134      0x337 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .debug_abbrev  0x000000000000046b       0x12 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_abbrev  0x000000000000047d      0x13e CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_abbrev  0x00000000000005bb      0x16d CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .debug_abbrev  0x0000000000000728      0x199 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_abbrev  0x00000000000008c1      0x1c7 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .debug_abbrev  0x0000000000000a88      0x1c0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_abbrev  0x0000000000000c48      0x139 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_abbrev  0x0000000000000d81      0x197 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_abbrev  0x0000000000000f18      0x253 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .debug_abbrev  0x000000000000116b       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x000000000000117f      0x11b /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x000000000000129a       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00000000000012ae       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_abbrev  0x00000000000012c2       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x00000000000012d6       0xcc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .debug_abbrev  0x00000000000013a2       0xb4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+
+.debug_loc      0x0000000000000000     0x243a
+ .debug_loc     0x0000000000000000       0x38 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .debug_loc     0x0000000000000038      0x4ec CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .debug_loc     0x0000000000000524       0xff CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_loc     0x0000000000000623       0x23 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .debug_loc     0x0000000000000646      0x2f2 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .debug_loc     0x0000000000000938      0x724 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_loc     0x000000000000105c       0x84 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_loc     0x00000000000010e0      0x4e6 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_loc     0x00000000000015c6      0x766 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .debug_loc     0x0000000000001d2c      0x3d3 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_loc     0x00000000000020ff       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .debug_loc     0x0000000000002197      0x2a3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+
+.debug_aranges  0x0000000000000000      0x428
+ .debug_aranges
+                0x0000000000000000       0x30 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .debug_aranges
+                0x0000000000000030       0xc8 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .debug_aranges
+                0x00000000000000f8       0x28 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_aranges
+                0x0000000000000120       0x28 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_aranges
+                0x0000000000000148       0x30 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .debug_aranges
+                0x0000000000000178       0x58 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_aranges
+                0x00000000000001d0       0x50 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .debug_aranges
+                0x0000000000000220       0x58 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_aranges
+                0x0000000000000278       0x20 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_aranges
+                0x0000000000000298       0x50 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_aranges
+                0x00000000000002e8       0x60 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .debug_aranges
+                0x0000000000000348       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x0000000000000368       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_aranges
+                0x0000000000000388       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x00000000000003a8       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_aranges
+                0x00000000000003c8       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000000000003e8       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .debug_aranges
+                0x0000000000000408       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+
+.debug_ranges   0x0000000000000000      0x2d0
+ .debug_ranges  0x0000000000000000       0x20 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .debug_ranges  0x0000000000000020       0xe8 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .debug_ranges  0x0000000000000108       0x20 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_ranges  0x0000000000000128       0x18 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_ranges  0x0000000000000140       0x20 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .debug_ranges  0x0000000000000160       0x48 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_ranges  0x00000000000001a8       0x40 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .debug_ranges  0x00000000000001e8       0x48 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_ranges  0x0000000000000230       0x10 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_ranges  0x0000000000000240       0x40 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_ranges  0x0000000000000280       0x50 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+
+.debug_line     0x0000000000000000     0x38b9
+ .debug_line    0x0000000000000000      0x258 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .debug_line    0x0000000000000258      0x9bb CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .debug_line    0x0000000000000c13       0xba CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_line    0x0000000000000ccd      0x263 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_line    0x0000000000000f30      0x1f0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .debug_line    0x0000000000001120      0x666 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_line    0x0000000000001786      0x454 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .debug_line    0x0000000000001bda      0x56e CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_line    0x0000000000002148      0x1dd CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_line    0x0000000000002325      0x4ff CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_line    0x0000000000002824      0xa35 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .debug_line    0x0000000000003259       0x6b /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x00000000000032c4      0x1c2 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000000000003486       0x60 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00000000000034e6       0x6a /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_line    0x0000000000003550       0x74 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_line    0x00000000000035c4      0x127 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .debug_line    0x00000000000036eb      0x1ce /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x0000000000000000     0x2320
+ .debug_str     0x0000000000000000      0x401 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+                                        0x470 (size before relaxing)
+ .debug_str     0x0000000000000401      0xab6 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                                        0xd0c (size before relaxing)
+ .debug_str     0x0000000000000eb7       0x6a CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/Startup.s.obj
+                                         0xab (size before relaxing)
+ .debug_str     0x0000000000000f21      0x13a CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+                                        0x345 (size before relaxing)
+ .debug_str     0x000000000000105b      0x12c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+                                        0x471 (size before relaxing)
+ .debug_str     0x0000000000001187      0x3da CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                                        0x9d0 (size before relaxing)
+ .debug_str     0x0000000000001561       0xf5 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+                                        0x4bb (size before relaxing)
+ .debug_str     0x0000000000001656      0x11f CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                                        0x746 (size before relaxing)
+ .debug_str     0x0000000000001775       0xdd CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+                                        0x60c (size before relaxing)
+ .debug_str     0x0000000000001852      0x1c7 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                                        0x629 (size before relaxing)
+ .debug_str     0x0000000000001a19      0x10b CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                                        0xbed (size before relaxing)
+ .debug_str     0x0000000000001b24       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x0000000000001bca      0x511 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+                                        0x602 (size before relaxing)
+ .debug_str     0x00000000000020db       0x30 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                         0xa6 (size before relaxing)
+ .debug_str     0x000000000000210b       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_str     0x000000000000210b       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_str     0x000000000000210b      0x16f /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+                                        0x204 (size before relaxing)
+ .debug_str     0x000000000000227a       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+                                        0x1b9 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x7a8
+ .debug_frame   0x0000000000000000       0x60 CMakeFiles/Baremetal_Bootloader.dir/Source/Application/Baremetal_Bootloader.c.obj
+ .debug_frame   0x0000000000000060      0x230 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ .debug_frame   0x0000000000000290       0x30 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_frame   0x00000000000002c0       0x48 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/CRC/CRC.c.obj
+ .debug_frame   0x0000000000000308       0xdc CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_frame   0x00000000000003e4       0xa8 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+ .debug_frame   0x000000000000048c       0xa0 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_frame   0x000000000000052c       0x2c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_frame   0x0000000000000558       0xb4 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_frame   0x000000000000060c      0x104 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+ .debug_frame   0x0000000000000710       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000000000000074c       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000778       0x30 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)

@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Baremetal_Bootloader",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Baremetal_Bootloader::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Baremetal_Bootloader-Debug-91c145be1279ec1c7957.json",
+					"name" : "Baremetal_Bootloader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "erase::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-erase-Debug-4694c63e5591ef00b4cc.json",
+					"name" : "erase",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flash::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flash-Debug-4e64c7fc93f79e2c60fa.json",
+					"name" : "flash",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read-Debug-0a3781c6614c1fbe55c1.json",
+					"name" : "read",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/build",
+		"source" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

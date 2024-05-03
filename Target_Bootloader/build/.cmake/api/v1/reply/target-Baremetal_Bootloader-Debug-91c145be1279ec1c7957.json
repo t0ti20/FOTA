@@ -1,0 +1,635 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Baremetal_Bootloader"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu99 -Og -g -gdwarf-4 -mthumb -g2 -fno-builtin -mcpu=cortex-m3 -Wall  -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -mlong-calls -g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Application"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library/Bootloader"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library/Cortex_M3/Headers"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library/MCU"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/CRC"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/EXTI"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/FLASH"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/GPIO"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/NVIC"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/RCC"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/USART"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -mthumb -g2 -mcpu=cortex-m3 -g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Application"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library/Bootloader"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library/Cortex_M3/Headers"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library/MCU"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/CRC"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/EXTI"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/FLASH"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/GPIO"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/NVIC"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/RCC"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/MCAL/USART"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"id" : "Baremetal_Bootloader::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=gnu99 -Og -g -gdwarf-4 -mthumb -g2 -fno-builtin -mcpu=cortex-m3 -Wall  -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -mlong-calls -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--gc-sections --specs=nano.specs --specs=nosys.specs -mthumb -g2 -mcpu=cortex-m0plus -mabi=aapcs -T/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Target_Bootloader/Include/Library/Cortex_M3/Linker_Script.ld -Wl,-Map=Baremetal_Bootloader.map",
+				"role" : "flags"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "Baremetal_Bootloader",
+	"nameOnDisk" : "Baremetal_Bootloader",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Application/Baremetal_Bootloader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Library/Bootloader/Bootloader_Program.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Source/Library/Cortex_M3/Startup.s",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Library/Cortex_M3/System_Init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MCAL/CRC/CRC.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MCAL/EXTI/EXTI_Program.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MCAL/FLASH/FLASH.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MCAL/GPIO/GPIO_Program.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MCAL/NVIC/NVIC_Program.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MCAL/RCC/RCC_Program.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/MCAL/USART/USART_Program.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"path" : "Include/Application/Baremetal_Bootloader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 15,
+			"path" : "Include/Library/Bootloader/Bootloader_Interface.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 16,
+			"path" : "Include/Library/Cortex_M3/Headers/cmsis_armcc_V6.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 17,
+			"path" : "Include/Library/Cortex_M3/Headers/cmsis_gcc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 18,
+			"path" : "Include/Library/Cortex_M3/Headers/core_cm3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 19,
+			"path" : "Include/Library/Cortex_M3/Headers/core_cmFunc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 20,
+			"path" : "Include/Library/Cortex_M3/Headers/core_cmInstr.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 21,
+			"path" : "Include/Library/Cortex_M3/Headers/core_cmSimd.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 22,
+			"path" : "Include/Library/Cortex_M3/Headers/stm32f103xb.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 23,
+			"path" : "Include/Library/Cortex_M3/Headers/stm32f1xx.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 24,
+			"path" : "Include/Library/Cortex_M3/Headers/system_stm32f10x.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 25,
+			"path" : "Include/Library/Cortex_M3/Headers/system_stm32f1xx.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 26,
+			"path" : "Include/Library/MCU/STM32F103.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 27,
+			"path" : "Include/Library/Macros.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 28,
+			"path" : "Include/Library/Standard_Types.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 29,
+			"path" : "Include/MCAL/CRC/CRC.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 30,
+			"path" : "Include/MCAL/EXTI/EXTI_Interface.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 31,
+			"path" : "Include/MCAL/FLASH/FLASH.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 32,
+			"path" : "Include/MCAL/GPIO/GPIO_Interface.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 33,
+			"path" : "Include/MCAL/NVIC/NVIC_Interface.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 34,
+			"path" : "Include/MCAL/RCC/RCC_Interface.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 35,
+			"path" : "Include/MCAL/USART/USART_Interface.h",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

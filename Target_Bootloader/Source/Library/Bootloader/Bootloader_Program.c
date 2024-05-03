@@ -419,11 +419,6 @@ static Bootloader_State_t Bootloader_Write_Flash(void)
 	{
 		Bootloader_Send_NACK();
 	}
-	/* If It Is Successfull Mark Page Number 32 In Order To Boot To Application Automatically */
-	if(Status==Bootloader_State_OK)
-	{
-		Flash_Write_Data(0x8007FFC,0x0);
-	}
 	/* Return State */
 	return Status;
 }
