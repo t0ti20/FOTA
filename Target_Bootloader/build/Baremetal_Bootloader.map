@@ -572,7 +572,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
                 0x0000000008001698                PROVIDE (__fini_array_end = .)
                 0x0000000008001698                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x29c load address 0x0000000008001698
+.data           0x0000000020000000      0x298 load address 0x0000000008001698
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -583,56 +583,56 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
  *fill*         0x000000002000000f        0x1 
  *(.FLASH_OPERATIONS)
  .FLASH_OPERATIONS
-                0x0000000020000010      0x164 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x0000000020000010      0x160 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
  .FLASH_OPERATIONS
-                0x0000000020000174      0x128 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
-                0x00000000200001d8                Flash_Erase_Pages
-                0x0000000020000210                Flash_Write_Page
-                0x0000000020000260                Flash_Write_Data
-                0x000000002000029c                . = ALIGN (0x4)
-                0x000000002000029c                _edata = .
+                0x0000000020000170      0x128 CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/FLASH/FLASH.c.obj
+                0x00000000200001d4                Flash_Erase_Pages
+                0x000000002000020c                Flash_Write_Page
+                0x000000002000025c                Flash_Write_Data
+                0x0000000020000298                . = ALIGN (0x4)
+                0x0000000020000298                _edata = .
 
 .tm_clone_table
-                0x000000002000029c        0x0 load address 0x0000000008001934
+                0x0000000020000298        0x0 load address 0x0000000008001930
  .tm_clone_table
-                0x000000002000029c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000298        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
-                0x000000002000029c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+                0x0000000020000298        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x000000002000029c        0x0 load address 0x0000000008001934
- .igot.plt      0x000000002000029c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x000000002000029c                . = ALIGN (0x4)
+.igot.plt       0x0000000020000298        0x0 load address 0x0000000008001930
+ .igot.plt      0x0000000020000298        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000298                . = ALIGN (0x4)
 
-.bss            0x000000002000029c      0x168 load address 0x0000000008001934
-                0x000000002000029c                _sbss = .
-                0x000000002000029c                __bss_start__ = _sbss
+.bss            0x0000000020000298      0x168 load address 0x0000000008001930
+                0x0000000020000298                _sbss = .
+                0x0000000020000298                __bss_start__ = _sbss
  *(.bss)
- .bss           0x000000002000029c       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss           0x0000000020000298       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.bss*)
  .bss.Open_Bootloader
-                0x00000000200002b8        0x1 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
-                0x00000000200002b8                Open_Bootloader
- *fill*         0x00000000200002b9        0x3 
+                0x00000000200002b4        0x1 CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+                0x00000000200002b4                Open_Bootloader
+ *fill*         0x00000000200002b5        0x3 
  .bss.UART_Buffer
-                0x00000000200002bc       0xff CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
- *fill*         0x00000000200003bb        0x1 
+                0x00000000200002b8       0xff CMakeFiles/Baremetal_Bootloader.dir/Source/Library/Bootloader/Bootloader_Program.c.obj
+ *fill*         0x00000000200003b7        0x1 
  .bss.EXTI_IRQ_Call_Back_Function
-                0x00000000200003bc       0x3c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x00000000200003b8       0x3c CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
  .bss.USART_IRQ_Call_Back_Function
-                0x00000000200003f8        0xc CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
+                0x00000000200003f4        0xc CMakeFiles/Baremetal_Bootloader.dir/Source/MCAL/USART/USART_Program.c.obj
  *(COMMON)
-                0x0000000020000404                . = ALIGN (0x4)
-                0x0000000020000404                _ebss = .
-                0x0000000020000404                __bss_end__ = _ebss
+                0x0000000020000400                . = ALIGN (0x4)
+                0x0000000020000400                _ebss = .
+                0x0000000020000400                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000404        0x0 load address 0x0000000008001934
-                0x0000000020000404                . = ALIGN (0x4)
+                0x0000000020000400        0x0 load address 0x0000000008001930
+                0x0000000020000400                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-                0x0000000020000404                . = (. + _Min_Heap_Size)
-                0x0000000020000404                . = (. + _Min_Stack_Size)
-                0x0000000020000404                . = ALIGN (0x4)
+                0x0000000020000400                . = (. + _Min_Heap_Size)
+                0x0000000020000400                . = (. + _Min_Stack_Size)
+                0x0000000020000400                . = ALIGN (0x4)
 
 /DISCARD/
  libc.a(*)

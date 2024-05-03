@@ -60,6 +60,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
+ .text.Test_Yellow
+                0x0000000000000000       0x70 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
  .text.Test_Blue
                 0x0000000000000000       0x70 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
  .text          0x0000000000000000       0x14 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
@@ -363,172 +365,169 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
                 0x0000000008008000                g_pfnVectors
                 0x000000000800810c                . = ALIGN (0x4)
 
-.text           0x000000000800810c      0x5dc
+.text           0x000000000800810c      0x564
                 0x000000000800810c                . = ALIGN (0x4)
  *(.text)
  .text          0x000000000800810c       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .text          0x00000000080081a4       0x44 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
                 0x00000000080081a4                __libc_init_array
  *(.text*)
- .text.Test_Yellow
-                0x00000000080081e8       0x70 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
-                0x00000000080081e8                Test_Yellow
  .text.System_Initialization
-                0x0000000008008258       0x70 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
-                0x0000000008008258                System_Initialization
- .text.main     0x00000000080082c8       0x14 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
-                0x00000000080082c8                main
+                0x00000000080081e8       0x70 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
+                0x00000000080081e8                System_Initialization
+ .text.main     0x0000000008008258        0xc CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
+                0x0000000008008258                main
  .text.Reset_Handler
-                0x00000000080082dc       0x48 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
-                0x00000000080082dc                Reset_Handler
+                0x0000000008008264       0x48 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x0000000008008264                Reset_Handler
  .text.Default_Handler
-                0x0000000008008324        0x2 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
-                0x0000000008008324                RTC_Alarm_IRQHandler
-                0x0000000008008324                DebugMon_Handler
-                0x0000000008008324                TIM1_CC_IRQHandler
-                0x0000000008008324                HardFault_Handler
-                0x0000000008008324                SysTick_Handler
-                0x0000000008008324                PVD_IRQHandler
-                0x0000000008008324                PendSV_Handler
-                0x0000000008008324                NMI_Handler
-                0x0000000008008324                I2C2_EV_IRQHandler
-                0x0000000008008324                UsageFault_Handler
-                0x0000000008008324                ADC1_2_IRQHandler
-                0x0000000008008324                SPI1_IRQHandler
-                0x0000000008008324                TAMPER_IRQHandler
-                0x0000000008008324                DMA1_Channel4_IRQHandler
-                0x0000000008008324                USART3_IRQHandler
-                0x0000000008008324                RTC_IRQHandler
-                0x0000000008008324                DMA1_Channel7_IRQHandler
-                0x0000000008008324                CAN1_RX1_IRQHandler
-                0x0000000008008324                TIM4_IRQHandler
-                0x0000000008008324                I2C1_EV_IRQHandler
-                0x0000000008008324                DMA1_Channel6_IRQHandler
-                0x0000000008008324                TIM3_IRQHandler
-                0x0000000008008324                RCC_IRQHandler
-                0x0000000008008324                TIM1_TRG_COM_IRQHandler
-                0x0000000008008324                DMA1_Channel1_IRQHandler
-                0x0000000008008324                Default_Handler
-                0x0000000008008324                SPI2_IRQHandler
-                0x0000000008008324                MemManage_Handler
-                0x0000000008008324                SVC_Handler
-                0x0000000008008324                DMA1_Channel5_IRQHandler
-                0x0000000008008324                USB_LP_CAN1_RX0_IRQHandler
-                0x0000000008008324                USB_HP_CAN1_TX_IRQHandler
-                0x0000000008008324                DMA1_Channel3_IRQHandler
-                0x0000000008008324                TIM1_UP_IRQHandler
-                0x0000000008008324                WWDG_IRQHandler
-                0x0000000008008324                TIM2_IRQHandler
-                0x0000000008008324                TIM1_BRK_IRQHandler
-                0x0000000008008324                USART2_IRQHandler
-                0x0000000008008324                I2C2_ER_IRQHandler
-                0x0000000008008324                DMA1_Channel2_IRQHandler
-                0x0000000008008324                CAN1_SCE_IRQHandler
-                0x0000000008008324                FLASH_IRQHandler
-                0x0000000008008324                BusFault_Handler
-                0x0000000008008324                USART1_IRQHandler
-                0x0000000008008324                I2C1_ER_IRQHandler
-                0x0000000008008324                USBWakeUp_IRQHandler
- *fill*         0x0000000008008326        0x2 
+                0x00000000080082ac        0x2 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x00000000080082ac                RTC_Alarm_IRQHandler
+                0x00000000080082ac                DebugMon_Handler
+                0x00000000080082ac                TIM1_CC_IRQHandler
+                0x00000000080082ac                HardFault_Handler
+                0x00000000080082ac                SysTick_Handler
+                0x00000000080082ac                PVD_IRQHandler
+                0x00000000080082ac                PendSV_Handler
+                0x00000000080082ac                NMI_Handler
+                0x00000000080082ac                I2C2_EV_IRQHandler
+                0x00000000080082ac                UsageFault_Handler
+                0x00000000080082ac                ADC1_2_IRQHandler
+                0x00000000080082ac                SPI1_IRQHandler
+                0x00000000080082ac                TAMPER_IRQHandler
+                0x00000000080082ac                DMA1_Channel4_IRQHandler
+                0x00000000080082ac                USART3_IRQHandler
+                0x00000000080082ac                RTC_IRQHandler
+                0x00000000080082ac                DMA1_Channel7_IRQHandler
+                0x00000000080082ac                CAN1_RX1_IRQHandler
+                0x00000000080082ac                TIM4_IRQHandler
+                0x00000000080082ac                I2C1_EV_IRQHandler
+                0x00000000080082ac                DMA1_Channel6_IRQHandler
+                0x00000000080082ac                TIM3_IRQHandler
+                0x00000000080082ac                RCC_IRQHandler
+                0x00000000080082ac                TIM1_TRG_COM_IRQHandler
+                0x00000000080082ac                DMA1_Channel1_IRQHandler
+                0x00000000080082ac                Default_Handler
+                0x00000000080082ac                SPI2_IRQHandler
+                0x00000000080082ac                MemManage_Handler
+                0x00000000080082ac                SVC_Handler
+                0x00000000080082ac                DMA1_Channel5_IRQHandler
+                0x00000000080082ac                USB_LP_CAN1_RX0_IRQHandler
+                0x00000000080082ac                USB_HP_CAN1_TX_IRQHandler
+                0x00000000080082ac                DMA1_Channel3_IRQHandler
+                0x00000000080082ac                TIM1_UP_IRQHandler
+                0x00000000080082ac                WWDG_IRQHandler
+                0x00000000080082ac                TIM2_IRQHandler
+                0x00000000080082ac                TIM1_BRK_IRQHandler
+                0x00000000080082ac                USART2_IRQHandler
+                0x00000000080082ac                I2C2_ER_IRQHandler
+                0x00000000080082ac                DMA1_Channel2_IRQHandler
+                0x00000000080082ac                CAN1_SCE_IRQHandler
+                0x00000000080082ac                FLASH_IRQHandler
+                0x00000000080082ac                BusFault_Handler
+                0x00000000080082ac                USART1_IRQHandler
+                0x00000000080082ac                I2C1_ER_IRQHandler
+                0x00000000080082ac                USBWakeUp_IRQHandler
+ *fill*         0x00000000080082ae        0x2 
  .text.SystemInit
-                0x0000000008008328       0x4c CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/System_Init.c.obj
-                0x0000000008008328                SystemInit
+                0x00000000080082b0       0x4c CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/System_Init.c.obj
+                0x00000000080082b0                SystemInit
  .text.EXTI0_IRQHandler
-                0x0000000008008374       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
-                0x0000000008008374                EXTI0_IRQHandler
+                0x00000000080082fc       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x00000000080082fc                EXTI0_IRQHandler
  .text.EXTI1_IRQHandler
-                0x0000000008008390       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
-                0x0000000008008390                EXTI1_IRQHandler
+                0x0000000008008318       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008318                EXTI1_IRQHandler
  .text.EXTI2_IRQHandler
-                0x00000000080083ac       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
-                0x00000000080083ac                EXTI2_IRQHandler
+                0x0000000008008334       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008334                EXTI2_IRQHandler
  .text.EXTI3_IRQHandler
-                0x00000000080083c8       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
-                0x00000000080083c8                EXTI3_IRQHandler
+                0x0000000008008350       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008350                EXTI3_IRQHandler
  .text.EXTI4_IRQHandler
-                0x00000000080083e4       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
-                0x00000000080083e4                EXTI4_IRQHandler
+                0x000000000800836c       0x1c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x000000000800836c                EXTI4_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x0000000008008400       0x90 CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
-                0x0000000008008400                EXTI9_5_IRQHandler
+                0x0000000008008388       0x90 CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008388                EXTI9_5_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x0000000008008490       0x90 CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
-                0x0000000008008490                EXTI15_10_IRQHandler
+                0x0000000008008418       0x90 CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008418                EXTI15_10_IRQHandler
  .text.MCAL_GPIO_Initialize
-                0x0000000008008520       0xd0 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
-                0x0000000008008520                MCAL_GPIO_Initialize
+                0x00000000080084a8       0xd0 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                0x00000000080084a8                MCAL_GPIO_Initialize
  .text.MCAL_GPIO_Write_Pin
-                0x00000000080085f0       0x48 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
-                0x00000000080085f0                MCAL_GPIO_Write_Pin
+                0x0000000008008578       0x48 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                0x0000000008008578                MCAL_GPIO_Write_Pin
  .text.RCC_Clock
-                0x0000000008008638       0x98 CMakeFiles/Test.125.33.44.dir/Source/MCAL/RCC/RCC_Program.c.obj
-                0x0000000008008638                RCC_Clock
+                0x00000000080085c0       0x98 CMakeFiles/Test.125.33.44.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                0x00000000080085c0                RCC_Clock
  *(.glue_7)
- .glue_7        0x00000000080086d0        0x0 linker stubs
+ .glue_7        0x0000000008008658        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000080086d0        0x0 linker stubs
+ .glue_7t       0x0000000008008658        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x00000000080086d0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x0000000008008658        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.init)
- .init          0x00000000080086d0        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x00000000080086d0                _init
- .init          0x00000000080086d4        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .init          0x0000000008008658        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008008658                _init
+ .init          0x000000000800865c        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
  *(.fini)
- .fini          0x00000000080086dc        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x00000000080086dc                _fini
- .fini          0x00000000080086e0        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
-                0x00000000080086e8                . = ALIGN (0x4)
-                0x00000000080086e8                _etext = .
+ .fini          0x0000000008008664        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008008664                _fini
+ .fini          0x0000000008008668        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000008008670                . = ALIGN (0x4)
+                0x0000000008008670                _etext = .
 
-.vfp11_veneer   0x00000000080086e8        0x0
- .vfp11_veneer  0x00000000080086e8        0x0 linker stubs
+.vfp11_veneer   0x0000000008008670        0x0
+ .vfp11_veneer  0x0000000008008670        0x0 linker stubs
 
-.v4_bx          0x00000000080086e8        0x0
- .v4_bx         0x00000000080086e8        0x0 linker stubs
+.v4_bx          0x0000000008008670        0x0
+ .v4_bx         0x0000000008008670        0x0 linker stubs
 
-.iplt           0x00000000080086e8        0x0
- .iplt          0x00000000080086e8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000008008670        0x0
+ .iplt          0x0000000008008670        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000080086e8        0x4
-                0x00000000080086e8                . = ALIGN (0x4)
+.rodata         0x0000000008008670        0x4
+                0x0000000008008670                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x00000000080086e8        0x3 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
+ .rodata        0x0000000008008670        0x3 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
  *(.rodata*)
-                0x00000000080086ec                . = ALIGN (0x4)
- *fill*         0x00000000080086eb        0x1 
+                0x0000000008008674                . = ALIGN (0x4)
+ *fill*         0x0000000008008673        0x1 
 
-.rel.dyn        0x00000000080086ec        0x0
- .rel.iplt      0x00000000080086ec        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008008674        0x0
+ .rel.iplt      0x0000000008008674        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00000000080086ec        0x0
-                0x00000000080086ec                __exidx_start = .
+.ARM            0x0000000008008674        0x0
+                0x0000000008008674                __exidx_start = .
  *(.ARM.exidx*)
-                0x00000000080086ec                __exidx_end = .
+                0x0000000008008674                __exidx_end = .
 
-.preinit_array  0x00000000080086ec        0x0
-                0x00000000080086ec                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008008674        0x0
+                0x0000000008008674                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x00000000080086ec                PROVIDE (__preinit_array_end = .)
+                0x0000000008008674                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x00000000080086ec        0x4
-                0x00000000080086ec                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008008674        0x4
+                0x0000000008008674                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x00000000080086ec        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000080086f0                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000008008674        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008008678                PROVIDE (__init_array_end = .)
 
-.fini_array     0x00000000080086f0        0x4
-                0x00000000080086f0                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000008008678        0x4
+                0x0000000008008678                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x00000000080086f0        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000080086f4                PROVIDE (__fini_array_end = .)
-                0x00000000080086f4                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008008678        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x000000000800867c                PROVIDE (__fini_array_end = .)
+                0x000000000800867c                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x0 load address 0x00000000080086f4
+.data           0x0000000020000000        0x0 load address 0x000000000800867c
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -537,17 +536,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
                 0x0000000020000000                _edata = .
 
 .tm_clone_table
-                0x0000000020000000        0x0 load address 0x00000000080086f4
+                0x0000000020000000        0x0 load address 0x000000000800867c
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000000        0x0 load address 0x00000000080086f4
+.igot.plt       0x0000000020000000        0x0 load address 0x000000000800867c
  .igot.plt      0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
                 0x0000000020000000                . = ALIGN (0x4)
 
-.bss            0x0000000020000000       0x58 load address 0x00000000080086f4
+.bss            0x0000000020000000       0x58 load address 0x000000000800867c
                 0x0000000020000000                _sbss = .
                 0x0000000020000000                __bss_start__ = _sbss
  *(.bss)
@@ -561,7 +560,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
                 0x0000000020000058                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000058        0x0 load address 0x00000000080086f4
+                0x0000000020000058        0x0 load address 0x000000000800867c
                 0x0000000020000058                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
@@ -616,14 +615,14 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
  .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
  .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.debug_info     0x0000000000000000     0x247c
- .debug_info    0x0000000000000000      0x56a CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
- .debug_info    0x000000000000056a       0x22 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
- .debug_info    0x000000000000058c      0x3e8 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/System_Init.c.obj
- .debug_info    0x0000000000000974      0x96c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
- .debug_info    0x00000000000012e0      0x9a4 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
- .debug_info    0x0000000000001c84      0x6de CMakeFiles/Test.125.33.44.dir/Source/MCAL/RCC/RCC_Program.c.obj
- .debug_info    0x0000000000002362      0x11a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+.debug_info     0x0000000000000000     0x2473
+ .debug_info    0x0000000000000000      0x561 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
+ .debug_info    0x0000000000000561       0x22 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_info    0x0000000000000583      0x3e8 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_info    0x000000000000096b      0x96c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_info    0x00000000000012d7      0x9a4 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_info    0x0000000000001c7b      0x6de CMakeFiles/Test.125.33.44.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_info    0x0000000000002359      0x11a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
 
 .debug_abbrev   0x0000000000000000      0x840
  .debug_abbrev  0x0000000000000000      0x134 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
@@ -665,14 +664,14 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
  .debug_ranges  0x00000000000000a8       0x48 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
  .debug_ranges  0x00000000000000f0       0x40 CMakeFiles/Test.125.33.44.dir/Source/MCAL/RCC/RCC_Program.c.obj
 
-.debug_line     0x0000000000000000     0x1771
- .debug_line    0x0000000000000000      0x2cc CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
- .debug_line    0x00000000000002cc       0xb4 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
- .debug_line    0x0000000000000380      0x257 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/System_Init.c.obj
- .debug_line    0x00000000000005d7      0x63c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
- .debug_line    0x0000000000000c13      0x550 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
- .debug_line    0x0000000000001163      0x4e7 CMakeFiles/Test.125.33.44.dir/Source/MCAL/RCC/RCC_Program.c.obj
- .debug_line    0x000000000000164a      0x127 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+.debug_line     0x0000000000000000     0x176f
+ .debug_line    0x0000000000000000      0x2ca CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj
+ .debug_line    0x00000000000002ca       0xb4 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_line    0x000000000000037e      0x257 CMakeFiles/Test.125.33.44.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_line    0x00000000000005d5      0x63c CMakeFiles/Test.125.33.44.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_line    0x0000000000000c11      0x550 CMakeFiles/Test.125.33.44.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_line    0x0000000000001161      0x4e7 CMakeFiles/Test.125.33.44.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_line    0x0000000000001648      0x127 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
 
 .debug_str      0x0000000000000000     0x1005
  .debug_str     0x0000000000000000      0x3e1 CMakeFiles/Test.125.33.44.dir/Source/Application/Application.c.obj

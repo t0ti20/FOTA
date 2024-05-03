@@ -7,7 +7,7 @@
           {
                "preLaunchCommands": [],
                "cwd": "${workspaceRoot}",
-               "executable": "${workspaceFolder}/Build/STM32F103C8.elf",
+               "executable": "${workspaceFolder}/build/Baremetal_Bootloader",
                "name": "Debug with OpenOCD",
                "request": "launch",
                "type": "cortex-debug",

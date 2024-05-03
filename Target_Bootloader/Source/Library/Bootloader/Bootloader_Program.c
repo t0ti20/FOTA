@@ -374,12 +374,12 @@ static Bootloader_State_t Bootloader_Write_Flash(void)
 	/* Current Received Frame */
 	u8 Current_Frame=ZERO;
 	/* Erase NEEDED Paged To Be Ready For Writing */
-	if(Flash_Erase_Pages(Writing_Page-1,(((250*Total_Payload_Frames)/1024)+1))==Flash_State_Ok)
+	if(Flash_Erase_Pages(Writing_Page,(((250*Total_Payload_Frames)/1024)+1))==Flash_State_Ok)
 	{
 		/* Send ACK On Payload Size Frame */
 		Bootloader_Send_ACK();
 		/* Srart Reveining All Frames */
-		while(Current_Frame<=Total_Payload_Frames)
+		while(Current_Frame<Total_Payload_Frames)
 		{
 			/* Check For Received Frame */
 			if(Bootloader_Receive_Payload()==Bootloader_State_OK)
