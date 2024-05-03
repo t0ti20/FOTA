@@ -11,9 +11,9 @@
 message(STATUS "================== Building Application ==================")
 
 #Vesrion Control
-set(Chip_ID 125)
-set(Major 33)
-set(Minor 44)
+set(Chip_ID 111)
+set(Major 11)
+set(Minor 11)
 
 # Set the minimum required CMake version
 cmake_minimum_required(VERSION 3.0)

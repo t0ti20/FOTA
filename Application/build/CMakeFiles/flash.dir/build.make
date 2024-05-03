@@ -68,7 +68,7 @@ include CMakeFiles/flash.dir/progress.make
 
 CMakeFiles/flash:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Flashing finished"
-	st-flash write /home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/Test.125.33.44.bin 0x08000000
+	st-flash write /home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/Test.111.11.11.bin 0x08000000
 
 flash: CMakeFiles/flash
 flash: CMakeFiles/flash.dir/build.make

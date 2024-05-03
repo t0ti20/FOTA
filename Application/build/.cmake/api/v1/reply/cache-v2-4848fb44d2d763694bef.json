@@ -279,10 +279,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/arm-none-eabi-g++"
 		},
 		{
@@ -407,10 +407,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/arm-none-eabi-gcc"
 		},
 		{
@@ -567,7 +567,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-Wl,--gc-sections --specs=nano.specs --specs=nosys.specs -mthumb -g2 -mcpu=cortex-m0plus -mabi=aapcs -T/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/Include/Library/Cortex_M3/Linker_Script.ld -Wl,-Map=Test.125.33.44.map"
+			"value" : "-Wl,--gc-sections --specs=nano.specs --specs=nosys.specs -mthumb -g2 -mcpu=cortex-m0plus -mabi=aapcs -T/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/Include/Library/Cortex_M3/Linker_Script.ld -Wl,-Map=Test.111.11.11.map"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
@@ -947,7 +947,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Test.125.33.44"
+			"value" : "Test.111.11.11"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1228,6 +1228,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "Test.111.11.11_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build"
+		},
+		{
+			"name" : "Test.111.11.11_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Test.111.11.11_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application"
 		},
 		{
 			"name" : "Test.125.33.44_BINARY_DIR",

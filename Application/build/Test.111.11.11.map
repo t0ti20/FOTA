@@ -1,0 +1,698 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                              CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj (__aeabi_uldivmod)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o) (__clzdi2)
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o) (__clzsi2)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (atexit)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (exit)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_fini_array)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_init_array)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o) (__register_exitproc)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o) (__call_exitprocs)
+/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o) (_exit)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .debug_line    0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .debug_str     0x0000000000000000      0x12f /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x0000000000000000       0x74 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_line    0x0000000000000000       0x8c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .debug_str     0x0000000000000000       0x94 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .text          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .text.Test_Yellow
+                0x0000000000000000       0x70 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .text.Test_Blue
+                0x0000000000000000       0x70 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .text          0x0000000000000000       0x14 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x94 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .rodata.AHBPrescTable
+                0x0000000000000000       0x10 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .rodata.APBPrescTable
+                0x0000000000000000        0x8 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .rodata.EXTI_Initilization.str1.4
+                0x0000000000000000       0x11 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .text.EXTI_Initilization
+                0x0000000000000000      0x14c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Lock_Pin
+                0x0000000000000000       0x68 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Read_Pin
+                0x0000000000000000       0x38 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Toggle_Pin
+                0x0000000000000000       0x3c CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Read_Port
+                0x0000000000000000       0x34 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Write_Port
+                0x0000000000000000       0x34 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text.MCAL_GPIO_Toggle_Port
+                0x0000000000000000       0x38 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .text.NVIC_Interrupt
+                0x0000000000000000       0x44 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_info    0x0000000000000000      0x58a CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_abbrev  0x0000000000000000      0x139 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_loc     0x0000000000000000       0x84 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_aranges
+                0x0000000000000000       0x20 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_ranges  0x0000000000000000       0x10 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_line    0x0000000000000000      0x1c5 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_str     0x0000000000000000      0x600 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .comment       0x0000000000000000       0x34 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .debug_frame   0x0000000000000000       0x2c CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x29 CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Get_PLL2_Clock
+                0x0000000000000000       0xf0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Get_PLL_Clock
+                0x0000000000000000       0xdc CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Get_System_Clock
+                0x0000000000000000       0x3c CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Get_AHB_Clock
+                0x0000000000000000       0x40 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Get_APB1_Clock
+                0x0000000000000000       0x40 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text.RCC_Get_APB2_Clock
+                0x0000000000000000       0x40 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .text          0x0000000000000000       0x40 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000000000000000       0x6b /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x0000000000000000       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .text          0x0000000000000000      0x198 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0000000000000000        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x0000000000000000      0x39f /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000000000000000      0x11b /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_loc     0x0000000000000000      0x3d3 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000000000000000      0x1c2 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x0000000000000000      0x602 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000000000       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .text          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000000000       0x60 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x0000000000000000       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000       0x18 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_line    0x0000000000000000       0x6a /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_str     0x0000000000000000       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .text          0x0000000000000000       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_line    0x0000000000000000       0x74 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_str     0x0000000000000000       0xa6 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_info    0x0000000000000000      0x100 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_abbrev  0x0000000000000000       0xb4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_loc     0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_line    0x0000000000000000       0xc3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_str     0x0000000000000000      0x1e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-atexit.o)
+ .text          0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_info    0x0000000000000000      0x81a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000000000      0x1ba /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_loc     0x0000000000000000       0x22 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_line    0x0000000000000000      0x16b /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_str     0x0000000000000000      0x521 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_info    0x0000000000000000      0x102 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_abbrev  0x0000000000000000       0xcc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_loc     0x0000000000000000       0x46 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_line    0x0000000000000000       0xef /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_str     0x0000000000000000      0x1da /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000       0x64 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .rodata        0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_info    0x0000000000000000      0x863 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000000      0x151 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000000       0x18 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_line    0x0000000000000000       0xe4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_str     0x0000000000000000      0x557 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .text          0x0000000000000000       0xa8 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_info    0x0000000000000000      0x13d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000000000       0xb4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_loc     0x0000000000000000      0x2a3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_line    0x0000000000000000      0x1ce /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_str     0x0000000000000000      0x1b9 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000000       0x30 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000       0xd0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000       0x8c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_info    0x0000000000000000      0x269 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0000000000000000      0x1bd /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_loc     0x0000000000000000      0x203 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000000000      0x201 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_str     0x0000000000000000      0x290 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000000       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__atexit.o)
+ .text          0x0000000000000000       0xfc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000000000000000      0x249 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000000000      0x179 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_loc     0x0000000000000000      0x273 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_ranges  0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000000000000000      0x219 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_str     0x0000000000000000      0x254 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000000       0x3c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_info    0x0000000000000000       0xa3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_abbrev  0x0000000000000000       0x6a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_loc     0x0000000000000000       0x15 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_line    0x0000000000000000       0x75 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_str     0x0000000000000000      0x17a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .rodata        0x0000000000000000       0x24 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008008000 0x0000000000008000 xr
+RAM              0x0000000020000000 0x0000000000005000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtfastmath.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+LOAD CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+LOAD CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+LOAD CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+LOAD CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+LOAD CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+LOAD CMakeFiles/Test.111.11.11.dir/Source/MCAL/NVIC/NVIC_Program.c.obj
+LOAD CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000020005000                _estack = 0x20005000
+                0x0000000020005000                Top_Of_Stack = _estack
+                0x0000000020000040                __end_sp = 0x20000040
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000000000                _Min_Stack_Size = 0x0
+
+.isr_vector     0x0000000008008000      0x10c
+                0x0000000008008000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008008000      0x10c CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x0000000008008000                g_pfnVectors
+                0x000000000800810c                . = ALIGN (0x4)
+
+.text           0x000000000800810c      0x564
+                0x000000000800810c                . = ALIGN (0x4)
+ *(.text)
+ .text          0x000000000800810c       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x00000000080081a4       0x44 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+                0x00000000080081a4                __libc_init_array
+ *(.text*)
+ .text.System_Initialization
+                0x00000000080081e8       0x70 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+                0x00000000080081e8                System_Initialization
+ .text.main     0x0000000008008258        0xc CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+                0x0000000008008258                main
+ .text.Reset_Handler
+                0x0000000008008264       0x48 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x0000000008008264                Reset_Handler
+ .text.Default_Handler
+                0x00000000080082ac        0x2 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+                0x00000000080082ac                RTC_Alarm_IRQHandler
+                0x00000000080082ac                DebugMon_Handler
+                0x00000000080082ac                TIM1_CC_IRQHandler
+                0x00000000080082ac                HardFault_Handler
+                0x00000000080082ac                SysTick_Handler
+                0x00000000080082ac                PVD_IRQHandler
+                0x00000000080082ac                PendSV_Handler
+                0x00000000080082ac                NMI_Handler
+                0x00000000080082ac                I2C2_EV_IRQHandler
+                0x00000000080082ac                UsageFault_Handler
+                0x00000000080082ac                ADC1_2_IRQHandler
+                0x00000000080082ac                SPI1_IRQHandler
+                0x00000000080082ac                TAMPER_IRQHandler
+                0x00000000080082ac                DMA1_Channel4_IRQHandler
+                0x00000000080082ac                USART3_IRQHandler
+                0x00000000080082ac                RTC_IRQHandler
+                0x00000000080082ac                DMA1_Channel7_IRQHandler
+                0x00000000080082ac                CAN1_RX1_IRQHandler
+                0x00000000080082ac                TIM4_IRQHandler
+                0x00000000080082ac                I2C1_EV_IRQHandler
+                0x00000000080082ac                DMA1_Channel6_IRQHandler
+                0x00000000080082ac                TIM3_IRQHandler
+                0x00000000080082ac                RCC_IRQHandler
+                0x00000000080082ac                TIM1_TRG_COM_IRQHandler
+                0x00000000080082ac                DMA1_Channel1_IRQHandler
+                0x00000000080082ac                Default_Handler
+                0x00000000080082ac                SPI2_IRQHandler
+                0x00000000080082ac                MemManage_Handler
+                0x00000000080082ac                SVC_Handler
+                0x00000000080082ac                DMA1_Channel5_IRQHandler
+                0x00000000080082ac                USB_LP_CAN1_RX0_IRQHandler
+                0x00000000080082ac                USB_HP_CAN1_TX_IRQHandler
+                0x00000000080082ac                DMA1_Channel3_IRQHandler
+                0x00000000080082ac                TIM1_UP_IRQHandler
+                0x00000000080082ac                WWDG_IRQHandler
+                0x00000000080082ac                TIM2_IRQHandler
+                0x00000000080082ac                TIM1_BRK_IRQHandler
+                0x00000000080082ac                USART2_IRQHandler
+                0x00000000080082ac                I2C2_ER_IRQHandler
+                0x00000000080082ac                DMA1_Channel2_IRQHandler
+                0x00000000080082ac                CAN1_SCE_IRQHandler
+                0x00000000080082ac                FLASH_IRQHandler
+                0x00000000080082ac                BusFault_Handler
+                0x00000000080082ac                USART1_IRQHandler
+                0x00000000080082ac                I2C1_ER_IRQHandler
+                0x00000000080082ac                USBWakeUp_IRQHandler
+ *fill*         0x00000000080082ae        0x2 
+ .text.SystemInit
+                0x00000000080082b0       0x4c CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+                0x00000000080082b0                SystemInit
+ .text.EXTI0_IRQHandler
+                0x00000000080082fc       0x1c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x00000000080082fc                EXTI0_IRQHandler
+ .text.EXTI1_IRQHandler
+                0x0000000008008318       0x1c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008318                EXTI1_IRQHandler
+ .text.EXTI2_IRQHandler
+                0x0000000008008334       0x1c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008334                EXTI2_IRQHandler
+ .text.EXTI3_IRQHandler
+                0x0000000008008350       0x1c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008350                EXTI3_IRQHandler
+ .text.EXTI4_IRQHandler
+                0x000000000800836c       0x1c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x000000000800836c                EXTI4_IRQHandler
+ .text.EXTI9_5_IRQHandler
+                0x0000000008008388       0x90 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008388                EXTI9_5_IRQHandler
+ .text.EXTI15_10_IRQHandler
+                0x0000000008008418       0x90 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                0x0000000008008418                EXTI15_10_IRQHandler
+ .text.MCAL_GPIO_Initialize
+                0x00000000080084a8       0xd0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                0x00000000080084a8                MCAL_GPIO_Initialize
+ .text.MCAL_GPIO_Write_Pin
+                0x0000000008008578       0x48 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                0x0000000008008578                MCAL_GPIO_Write_Pin
+ .text.RCC_Clock
+                0x00000000080085c0       0x98 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                0x00000000080085c0                RCC_Clock
+ *(.glue_7)
+ .glue_7        0x0000000008008658        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008008658        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x0000000008008658        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ *(.init)
+ .init          0x0000000008008658        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008008658                _init
+ .init          0x000000000800865c        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x0000000008008664        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008008664                _fini
+ .fini          0x0000000008008668        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000008008670                . = ALIGN (0x4)
+                0x0000000008008670                _etext = .
+
+.vfp11_veneer   0x0000000008008670        0x0
+ .vfp11_veneer  0x0000000008008670        0x0 linker stubs
+
+.v4_bx          0x0000000008008670        0x0
+ .v4_bx         0x0000000008008670        0x0 linker stubs
+
+.iplt           0x0000000008008670        0x0
+ .iplt          0x0000000008008670        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.rodata         0x0000000008008670        0x4
+                0x0000000008008670                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x0000000008008670        0x3 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ *(.rodata*)
+                0x0000000008008674                . = ALIGN (0x4)
+ *fill*         0x0000000008008673        0x1 
+
+.rel.dyn        0x0000000008008674        0x0
+ .rel.iplt      0x0000000008008674        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008008674        0x0
+                0x0000000008008674                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008008674                __exidx_end = .
+
+.preinit_array  0x0000000008008674        0x0
+                0x0000000008008674                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x0000000008008674                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000008008674        0x4
+                0x0000000008008674                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x0000000008008674        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008008678                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000008008678        0x4
+                0x0000000008008678                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0000000008008678        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x000000000800867c                PROVIDE (__fini_array_end = .)
+                0x000000000800867c                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000        0x0 load address 0x000000000800867c
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ *(.data*)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _edata = .
+
+.tm_clone_table
+                0x0000000020000000        0x0 load address 0x000000000800867c
+ .tm_clone_table
+                0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .tm_clone_table
+                0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+
+.igot.plt       0x0000000020000000        0x0 load address 0x000000000800867c
+ .igot.plt      0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000000                . = ALIGN (0x4)
+
+.bss            0x0000000020000000       0x58 load address 0x000000000800867c
+                0x0000000020000000                _sbss = .
+                0x0000000020000000                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x0000000020000000       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ *(.bss*)
+ .bss.EXTI_IRQ_Call_Back_Function
+                0x000000002000001c       0x3c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ *(COMMON)
+                0x0000000020000058                . = ALIGN (0x4)
+                0x0000000020000058                _ebss = .
+                0x0000000020000058                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x0000000020000058        0x0 load address 0x000000000800867c
+                0x0000000020000058                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x0000000020000058                . = (. + _Min_Heap_Size)
+                0x0000000020000058                . = (. + _Min_Stack_Size)
+                0x0000000020000058                . = ALIGN (0x4)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x2b
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x29 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .ARM.attributes
+                0x0000000000000073       0x21 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .ARM.attributes
+                0x0000000000000094       0x29 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .ARM.attributes
+                0x00000000000000bd       0x29 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .ARM.attributes
+                0x00000000000000e6       0x29 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .ARM.attributes
+                0x000000000000010f       0x29 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .ARM.attributes
+                0x0000000000000138       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000164       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x0000000000000190       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+OUTPUT(Test.111.11.11 elf32-littlearm)
+LOAD linker stubs
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+
+.comment        0x0000000000000000       0x33
+ .comment       0x0000000000000000       0x33 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                                         0x34 (size before relaxing)
+ .comment       0x0000000000000033       0x34 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+ .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+
+.debug_info     0x0000000000000000     0x2473
+ .debug_info    0x0000000000000000      0x561 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .debug_info    0x0000000000000561       0x22 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_info    0x0000000000000583      0x3e8 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_info    0x000000000000096b      0x96c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_info    0x00000000000012d7      0x9a4 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_info    0x0000000000001c7b      0x6de CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_info    0x0000000000002359      0x11a /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+
+.debug_abbrev   0x0000000000000000      0x840
+ .debug_abbrev  0x0000000000000000      0x134 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .debug_abbrev  0x0000000000000134       0x12 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_abbrev  0x0000000000000146      0x13e CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_abbrev  0x0000000000000284      0x199 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_abbrev  0x000000000000041d      0x1c0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_abbrev  0x00000000000005dd      0x197 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_abbrev  0x0000000000000774       0xcc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+
+.debug_loc      0x0000000000000000      0xed5
+ .debug_loc     0x0000000000000000      0x134 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .debug_loc     0x0000000000000134       0xff CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_loc     0x0000000000000233      0x724 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_loc     0x0000000000000957      0x4e6 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_loc     0x0000000000000e3d       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+
+.debug_aranges  0x0000000000000000      0x1a8
+ .debug_aranges
+                0x0000000000000000       0x38 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .debug_aranges
+                0x0000000000000038       0x28 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_aranges
+                0x0000000000000060       0x28 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_aranges
+                0x0000000000000088       0x58 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_aranges
+                0x00000000000000e0       0x58 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_aranges
+                0x0000000000000138       0x50 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_aranges
+                0x0000000000000188       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+
+.debug_ranges   0x0000000000000000      0x130
+ .debug_ranges  0x0000000000000000       0x28 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .debug_ranges  0x0000000000000028       0x20 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_ranges  0x0000000000000048       0x18 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_ranges  0x0000000000000060       0x48 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_ranges  0x00000000000000a8       0x48 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_ranges  0x00000000000000f0       0x40 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+
+.debug_line     0x0000000000000000     0x176f
+ .debug_line    0x0000000000000000      0x2ca CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .debug_line    0x00000000000002ca       0xb4 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+ .debug_line    0x000000000000037e      0x257 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_line    0x00000000000005d5      0x63c CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_line    0x0000000000000c11      0x550 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_line    0x0000000000001161      0x4e7 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_line    0x0000000000001648      0x127 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+
+.debug_str      0x0000000000000000     0x1005
+ .debug_str     0x0000000000000000      0x3e1 CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+                                        0x438 (size before relaxing)
+ .debug_str     0x00000000000003e1       0x64 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/Startup.s.obj
+                                         0x9f (size before relaxing)
+ .debug_str     0x0000000000000445      0x16f CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+                                        0x339 (size before relaxing)
+ .debug_str     0x00000000000005b4      0x602 CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+                                        0x9c4 (size before relaxing)
+ .debug_str     0x0000000000000bb6      0x11f CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+                                        0x73a (size before relaxing)
+ .debug_str     0x0000000000000cd5      0x1c1 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+                                        0x61d (size before relaxing)
+ .debug_str     0x0000000000000e96      0x16f /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
+                                        0x204 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x308
+ .debug_frame   0x0000000000000000       0x7c CMakeFiles/Test.111.11.11.dir/Source/Application/Application.c.obj
+ .debug_frame   0x000000000000007c       0x30 CMakeFiles/Test.111.11.11.dir/Source/Library/Cortex_M3/System_Init.c.obj
+ .debug_frame   0x00000000000000ac       0xdc CMakeFiles/Test.111.11.11.dir/Source/MCAL/EXTI/EXTI_Program.c.obj
+ .debug_frame   0x0000000000000188       0xa0 CMakeFiles/Test.111.11.11.dir/Source/MCAL/GPIO/GPIO_Program.c.obj
+ .debug_frame   0x0000000000000228       0xb4 CMakeFiles/Test.111.11.11.dir/Source/MCAL/RCC/RCC_Program.c.obj
+ .debug_frame   0x00000000000002dc       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-init.o)
