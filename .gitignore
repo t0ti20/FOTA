@@ -1,0 +1,25 @@
+# Build directories: ignore everything inside, but keep the flashable .bin outputs
+**/[Bb]uild/*
+!**/[Bb]uild/*.bin
+
+# Editor/tooling caches
+.cache/
+.vscode/ipch/
+
+# CMake generated files (in case of an in-source build)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+
+# Compiled firmware artifacts outside build directories
+*.o
+*.obj
+*.axf
+*.elf
+*.hex
+*.map
+
+# OS cruft
+.DS_Store

@@ -1,6 +1,0 @@
-/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/CMakeFiles/Test.111.11.11.dir
-/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/CMakeFiles/flash.dir
-/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/CMakeFiles/erase.dir
-/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/CMakeFiles/read.dir
-/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/CMakeFiles/edit_cache.dir
-/home/t0ti20/Desktop/VS-Code/GitHub/FOTA/Application/build/CMakeFiles/rebuild_cache.dir
