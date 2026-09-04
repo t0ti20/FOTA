@@ -23,7 +23,7 @@ string(TIMESTAMP Build_Time "%H%M%S")
 cmake_minimum_required(VERSION 3.0)
 
 # Set Project Name
-set(Application_Name Test.${Chip_ID}.${Build_Date}.${Build_Time})
+set(Application_Name Test_${Chip_ID}_${Build_Date}_${Build_Time})
 
 # Set CPP Standard
 set(CMAKE_CXX_STANDARD 17)
@@ -98,6 +98,13 @@ add_custom_command(
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary ${PROJECT_NAME} ${Application_Name}.bin
+)
+
+# Keep only the latest successful build's output, remove every earlier one
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -DDIR=${CMAKE_CURRENT_BINARY_DIR} -DKEEP=${Application_Name} -P ${CMAKE_CURRENT_SOURCE_DIR}/CleanBuildDir.cmake
+    COMMENT "Removing previous build outputs, keeping only ${Application_Name}"
 )
 
 # Flash on board
