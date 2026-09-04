@@ -15,11 +15,15 @@ set(Chip_ID 111)
 set(Major 11)
 set(Minor 11)
 
+# Auto-generate the build date and time, used for the binary name instead of a statically assigned version
+string(TIMESTAMP Build_Date "%Y%m%d")
+string(TIMESTAMP Build_Time "%H%M%S")
+
 # Set the minimum required CMake version
 cmake_minimum_required(VERSION 3.0)
 
-# Set Project Name   
-set(Application_Name Test.${Chip_ID}.${Major}.${Minor})
+# Set Project Name
+set(Application_Name Test.${Chip_ID}.${Build_Date}.${Build_Time})
 
 # Set CPP Standard
 set(CMAKE_CXX_STANDARD 17)
@@ -55,7 +59,7 @@ message(STATUS "Files To Be Compiled : ${SOURCES}")
 # Compiler and linker flags
 set(CMAKE_C_FLAGS "-std=gnu99 -Og -g -gdwarf-4 -mthumb -g2 -fno-builtin -mcpu=cortex-m3 -Wall  -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -mlong-calls")
 set(CMAKE_CXX_FLAGS " -std=c++11 -Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m3 -Wall  -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -mlong-calls")
-set(CMAKE_ASM_FLAGS "-g -mthumb -g2 -mcpu=cortex-m3")
+set(CMAKE_ASM_FLAGS "-g -mthumb -mcpu=cortex-m3")
 
 # Search for the linker script file
 file(GLOB_RECURSE LINKER_SCRIPT_PATH ${CMAKE_SOURCE_DIR}/*.ld)
