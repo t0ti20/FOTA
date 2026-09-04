@@ -11,9 +11,8 @@
 message(STATUS "================== Building Application ==================")
 
 #Vesrion Control
-set(Chip_ID 111)
-set(Major 11)
-set(Minor 11)
+set(Major 2)
+set(Minor 112)
 
 # Auto-generate the build date and time, used for the binary name instead of a statically assigned version
 string(TIMESTAMP Build_Date "%Y%m%d")
@@ -23,7 +22,7 @@ string(TIMESTAMP Build_Time "%H%M%S")
 cmake_minimum_required(VERSION 3.0)
 
 # Set Project Name
-set(Application_Name Test_${Chip_ID}_${Build_Date}_${Build_Time})
+set(Application_Name Test_${Build_Date}_${Build_Time})
 
 # Set CPP Standard
 set(CMAKE_CXX_STANDARD 17)
