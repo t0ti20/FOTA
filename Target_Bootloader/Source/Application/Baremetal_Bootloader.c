@@ -26,7 +26,7 @@ int main(void)
 {
 	System_Initialization();
 	Test();
-	delay_ms(4000);
+	delay_ms(8000);
 	Bootloader_Start();
 }
 
