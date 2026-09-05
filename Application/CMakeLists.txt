@@ -11,6 +11,7 @@
 message(STATUS "================== Building Application ==================")
 
 #Vesrion Control
+set(App_ID 1)
 set(Major 2)
 set(Minor 112)
 
@@ -21,8 +22,11 @@ string(TIMESTAMP Build_Time "%H%M%S")
 # Set the minimum required CMake version
 cmake_minimum_required(VERSION 3.0)
 
-# Set Project Name
-set(Application_Name Test_${Build_Date}_${Build_Time})
+# Set Project Name -- the ".ID.Major.Minor" tail is required so the Bootloader's
+# Get_Version() (in CPP_Application/Bootloader/Source/Bootloader_Interface.cpp)
+# can parse ID/Major/Minor by splitting the filename on '.' -- positions 2, 3
+# and 4 (0-indexed 1, 2, 3) are stoi()'d and MUST be numeric.
+set(Application_Name Test_${Build_Date}_${Build_Time}.${App_ID}.${Major}.${Minor})
 
 # Set CPP Standard
 set(CMAKE_CXX_STANDARD 17)
@@ -107,10 +111,23 @@ add_custom_command(
 )
 
 # Flash on board
-add_custom_target(flash 
+add_custom_target(flash
     COMMAND st-flash write ${CMAKE_CURRENT_BINARY_DIR}/${Application_Name}.bin ${FLASH_Address}
     COMMENT "Flashing finished"
 )
+
+# Push freshly built .bin to the Linux host running fota-bootloader.
+# The host's daemon reads /lib/firmware/stm32f103/ and flashes the STM32
+# on next target reset. Override at configure time, e.g.:
+#   cmake -DFOTA_TARGET_HOST=root@10.0.0.5 -DFOTA_TARGET_DIR=/opt/fw ..
+set(FOTA_TARGET_HOST "root@192.168.1.101"       CACHE STRING "SSH destination for `make push`")
+set(FOTA_TARGET_DIR  "/lib/firmware/stm32f103"  CACHE STRING "Directory on the Linux host to receive the .bin")
+
+add_custom_target(push
+    COMMAND scp ${CMAKE_CURRENT_BINARY_DIR}/${Application_Name}.bin ${FOTA_TARGET_HOST}:${FOTA_TARGET_DIR}/
+    COMMENT "Pushing ${Application_Name}.bin to ${FOTA_TARGET_HOST}:${FOTA_TARGET_DIR}/"
+)
+add_dependencies(push ${PROJECT_NAME})
 
 # Erase the flash
 add_custom_target(erase
