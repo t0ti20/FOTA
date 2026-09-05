@@ -12,15 +12,19 @@
 #define _BOOTLOADER_INTERFACE_H_
 /******************************************************************/
 /*****************************************
+----------   Include Files    ------------
+*****************************************/
+#include "Version_Config.h"
+/*****************************************
 ---------    Configure Macros    ---------
 *****************************************/
 //#define ENABLE_DEBUG
 /* Version Flag Location In Flash */
 #define Version_Location                ((const u32 *)(0x8007FFC))
-/* Default Version */
-#define Default_Chip_ID_Number          (250)
-#define Default_SW_Major_Version        (250)
-#define Default_SW_Minor_Version        (250)
+/* Default Version - tracked in CMakeLists.txt (Chip_ID/Major/Minor), embedded via Version_Config.h */
+#define Default_Chip_ID_Number          (BOOTLOADER_CHIP_ID)
+#define Default_SW_Major_Version        (BOOTLOADER_SW_MAJOR)
+#define Default_SW_Minor_Version        (BOOTLOADER_SW_MINOR)
 /* Services Providded By Bootloader */
 #define Total_Services                  (6)
 /* Receive Buffer Size */

@@ -10,11 +10,28 @@
 # Building Message
 message(STATUS "================== Building Application ==================")
 
+#Version Control
+set(Chip_ID 1)
+set(Major 1)
+set(Minor 0)
+
+# Auto-generate the build date and time, used for the binary name instead of a statically assigned version
+string(TIMESTAMP Build_Date "%Y%m%d")
+string(TIMESTAMP Build_Time "%H%M%S")
+
 # Set the minimum required CMake version
 cmake_minimum_required(VERSION 3.0)
 
-# Set Project Name   
-set(Application_Name Baremetal_Bootloader)
+# Set Project Name
+set(Application_Name Baremetal_Bootloader_${Build_Date}_${Build_Time})
+
+# Generate Version_Config.h from Chip_ID/Major/Minor so the firmware's reported
+# Send_Version/Send_ID reply tracks the same version this build was tagged with
+configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/Include/Library/Bootloader/Version_Config.h.in
+    ${CMAKE_CURRENT_BINARY_DIR}/Version_Config.h
+    @ONLY
+)
 
 # Set CPP Standard
 set(CMAKE_CXX_STANDARD 17)
@@ -51,7 +68,7 @@ message(STATUS "Files To Be Compiled : ${SOURCES}")
 # Compiler and linker flags
 set(CMAKE_C_FLAGS "-std=gnu99 -Og -g -gdwarf-4 -mthumb -g2 -fno-builtin -mcpu=cortex-m3 -Wall  -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -mlong-calls")
 set(CMAKE_CXX_FLAGS " -std=c++11 -Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m3 -Wall  -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -mlong-calls")
-set(CMAKE_ASM_FLAGS "-g -mthumb -g2 -mcpu=cortex-m3")
+set(CMAKE_ASM_FLAGS "-g -mthumb -mcpu=cortex-m3")
 
 # Search for the linker script file
 file(GLOB_RECURSE LINKER_SCRIPT_PATH ${CMAKE_SOURCE_DIR}/*.ld)
@@ -66,6 +83,9 @@ set(CMAKE_EXE_LINKER_FLAGS "-Wl,--gc-sections --specs=nano.specs --specs=nosys.s
 
 # Add Executable
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+# Make the generated Version_Config.h visible to Bootloader_Interface.h
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 
 # Collect all header files recursively from the Include directory
 file(GLOB_RECURSE INCLUDE_FILES "${CMAKE_SOURCE_DIR}/*.hpp" "${CMAKE_SOURCE_DIR}/*.h")
@@ -90,6 +110,13 @@ add_custom_command(
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary ${PROJECT_NAME} ${Application_Name}.bin
+)
+
+# Keep only the latest successful build's output, remove every earlier one
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -DDIR=${CMAKE_CURRENT_BINARY_DIR} -DKEEP=${Application_Name} -P ${CMAKE_CURRENT_SOURCE_DIR}/CleanBuildDir.cmake
+    COMMENT "Removing previous build outputs, keeping only ${Application_Name}"
 )
 
 # Flash on board
