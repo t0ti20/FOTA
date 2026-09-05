@@ -43,6 +43,11 @@ static u8 UART_Buffer[Maximum_Buffer_Size];
 * Parameters (out): None
 * Return value    : None
 * Notes           : - This function configures USART to run without interrupt.
+*                   - Updating Bootloader_UART.USART_Interrupt alone only records the
+*                     intent in software; it never touches hardware. The NVIC_Interrupt
+*                     call below is what actually disarms the RXNE interrupt, so later
+*                     polling reads (e.g. Bootloader_Receive_Command) aren't racing this
+*                     interrupt for the same incoming bytes.
 *****************************************************************************************************/
 static void Start_Bootloader_Interrupt(u16 *Data)
 {
@@ -50,6 +55,7 @@ static void Start_Bootloader_Interrupt(u16 *Data)
 	Open_Bootloader=TRUE;
 	Bootloader_UART.Call_Back_Function=NULL;
 	Bootloader_UART.USART_Interrupt=USART_Disable_Interrupt;
+	NVIC_Interrupt(NVIC_USART1,Disable);
 }
 
 /****************************************************************************************************
@@ -654,6 +660,30 @@ void Bootloader_Initialize(void)
 	USART_Initialization(&Bootloader_UART);
 	/* Initialize CRC Modlue */
 	CRC_Initialization();
+}
+
+/****************************************************************************************************
+* Function Name   : Bootloader_Echo
+* Description     : TEMPORARY hardware bring-up test: blocks waiting for one byte on the
+*                   bootloader's UART, then immediately transmits it straight back - a
+*                   simple loopback echo used to confirm both TX and RX are wired and
+*                   working.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+* Notes           : - Bootloader_UART is configured (by Bootloader_Initialize) with the RX
+*                     interrupt armed for the real bootloader's boot-window detection.
+*                     That interrupt's own callback silently consumes and discards
+*                     whatever byte arrives, racing this function's own polling read of
+*                     the same RXNE flag/DR register - since the ISR always wins that
+*                     race, every typed character was being swallowed before this
+*                     function ever saw it. Disabling the NVIC line here lets plain
+*                     polling actually receive bytes.
+*****************************************************************************************************/
+void Bootloader_Echo(void)
+{
+	NVIC_Interrupt(NVIC_USART1,Disable);
+	USART_Transmit(&Bootloader_UART,USART_Receive(&Bootloader_UART));
 }
 
 /********************************************************************

@@ -97,6 +97,17 @@ void *memset(void *str, int c, unsigned int n);
 *****************************************************************************************************/
 void Bootloader_Initialize(void);
 /****************************************************************************************************
+* Function Name   : Bootloader_Echo
+* Description     : TEMPORARY hardware bring-up test: blocks waiting for one byte on the
+*                   bootloader's UART, then immediately transmits it straight back - a
+*                   simple loopback echo used to confirm both TX and RX are wired and
+*                   working.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+*****************************************************************************************************/
+void Bootloader_Echo(void);
+/****************************************************************************************************
 * Function Name   : Bootloader_Start
 * Description     : Function to start the bootloader operation.
 * Parameters (in) : None
