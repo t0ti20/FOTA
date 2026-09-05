@@ -42,15 +42,11 @@ int main(void)
 *****************************************************************************************/
 void Test(void)
 {
-	/* TEMPORARY hardware bring-up test: simple UART echo - whatever byte
-	 * arrives on RX is sent straight back out on TX, forever. This never
-	 * returns, so Bootloader_Start() is never reached while this is in
-	 * place - revert to the plain "set all high once" version to restore
-	 * normal bootloader behavior. */
-	while(1)
-	{
-		Bootloader_Echo();
-	}
+	/* Test Application Indicate Bootloader Is Running */
+	MCAL_GPIO_Write_Pin(GPIO_B,Pin_14,1);
+	MCAL_GPIO_Write_Pin(GPIO_B,Pin_15,1);
+	MCAL_GPIO_Write_Pin(GPIO_B,Pin_0,1);
+	MCAL_GPIO_Write_Pin(GPIO_B,Pin_1,1);
 }
 /*****************************************************************************************
 * Function Name   : System_Initialization

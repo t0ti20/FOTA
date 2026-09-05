@@ -378,8 +378,10 @@ task, which stages its `.bin` for pickup elsewhere).
   one without the other would silently break the handoff.
 - **[`CPP_Application/Bootloader`](../CPP_Application)** — the Raspberry Pi host
   implementing the other end of this exact command protocol (`Bootloader_Interface.hpp`
-  mirrors the enums in `Bootloader_Interface.h` by hand): it holds the target in reset
-  or sends a byte during the 4-second window to force `Open_Bootloader`, then drives the
-  erase/flash/jump command sequence described above.
+  mirrors the enums in `Bootloader_Interface.h` by hand): it polls `Say_Hi()` to catch
+  the target during its 4-second window (forcing `Open_Bootloader`), drives the
+  erase/flash/jump command sequence described above, then resets the target purely in
+  software via the `Say_Bye` command (`SCB->AIRCR`) — there is no hardware reset line
+  between the host and the target.
 - **[`Diagrams/Baremetal_Bootloader.puml`](Diagrams/Baremetal_Bootloader.puml)** — the
   high-level sequence view of the boot decision flow described in detail above.
